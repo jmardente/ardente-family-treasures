@@ -1,29 +1,26 @@
-ARDENTE FAMILY TREASURES WEBSITE
+ARDENTE FAMILY TREASURES — MULTI-PAGE WEBSITE
 
-BRANDING
-Business name: Ardente Family Treasures
-Tagline: Home of Cora's Ocean Adventures
-
-FILES TO UPLOAD TO GITHUB
+HTML PAGES INCLUDED
 - index.html
+- book.html
+- characters.html
+- shop.html
+- about.html
+- contact.html
+
+OTHER FILES
 - styles.css
 - script.js
-- cora-waving.png
+- assets folder
 
-HOW TO UPDATE YOUR GITHUB WEBSITE
-1. Open your Ardente Family Treasures repository.
-2. Click Add file, then Upload files.
-3. Upload the four files listed above.
-4. Allow GitHub to replace the older versions.
-5. Scroll down and click Commit changes.
-6. Wait one to five minutes.
-7. Visit your GitHub Pages address and refresh the page.
+HOW TO UPLOAD TO GITHUB
+1. Unzip this folder.
+2. Open your GitHub repository.
+3. Click Add file > Upload files.
+4. Upload ALL six HTML files, styles.css, script.js, and the assets folder.
+5. Click Commit changes.
+6. Wait 1–5 minutes and refresh your live site.
 
-If your repository is named ardente-family-treasures, the address will usually be:
-https://jmardente.github.io/ardente-family-treasures/
-
-DIRECT AMAZON LINK
-https://www.amazon.com/dp/B0H9X346WF
-
-CONTACT
-JMARDENTE@OUTLOOK.COM
+IMPORTANT
+All HTML files must stay in the main repository area.
+The assets folder must stay named assets.
