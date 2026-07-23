@@ -1,0 +1,122 @@
+:root {
+  --page-max: 1402px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #041b35;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.site-shell {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.artboard {
+  position: relative;
+  width: min(100%, var(--page-max));
+  margin: 0 auto;
+  line-height: 0;
+  background: #0579bd;
+}
+
+.page-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.hotspot {
+  position: absolute;
+  z-index: 5;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+  line-height: normal;
+  -webkit-tap-highlight-color: rgba(255,255,255,.25);
+}
+
+.hotspot:focus-visible {
+  outline: 4px solid #fff;
+  outline-offset: 2px;
+  background: rgba(255,255,255,.16);
+}
+
+/* Add ?debug=1 to the URL to see all clickable regions. */
+.debug .hotspot {
+  background: rgba(255, 0, 180, .18);
+  outline: 2px dashed rgba(255,255,255,.9);
+}
+
+/* Coordinates are percentages of the original 1402 × 1122 artwork. */
+.home         { left: 39.0%; top: 3.0%; width: 5.3%; height: 6.4%; }
+.books        { left: 44.5%; top: 3.0%; width: 5.4%; height: 6.4%; }
+.shop         { left: 50.2%; top: 3.0%; width: 5.1%; height: 6.4%; }
+.about        { left: 56.0%; top: 3.0%; width: 5.4%; height: 6.4%; }
+.events       { left: 62.0%; top: 3.0%; width: 5.4%; height: 6.4%; }
+.contact      { left: 68.0%; top: 3.0%; width: 6.0%; height: 6.4%; }
+.facebook-top { left: 75.5%; top: 3.0%; width: 15.4%; height: 6.4%; }
+
+.meet-cora    { left: 5.3%; top: 43.0%; width: 12.0%; height: 5.4%; }
+.explore-shop { left: 18.0%; top: 43.0%; width: 15.2%; height: 5.4%; }
+
+.facebook-lower { left: 3.6%; top: 66.3%; width: 9.2%; height: 5.0%; }
+.amazon         { left: 13.5%; top: 66.3%; width: 12.6%; height: 5.0%; }
+.email-us       { left: 26.3%; top: 66.3%; width: 9.1%; height: 5.0%; }
+.learn-more     { left: 69.4%; top: 63.8%; width: 10.0%; height: 5.0%; }
+
+.footer-home    { left: 34.7%; top: 85.4%; width: 7.0%; height: 2.2%; }
+.footer-books   { left: 34.7%; top: 87.5%; width: 7.0%; height: 2.2%; }
+.footer-shop    { left: 34.7%; top: 89.6%; width: 7.0%; height: 2.2%; }
+.footer-about   { left: 34.7%; top: 91.7%; width: 7.0%; height: 2.2%; }
+.footer-events  { left: 34.7%; top: 93.8%; width: 7.0%; height: 2.2%; }
+.footer-contact { left: 34.7%; top: 95.9%; width: 7.0%; height: 2.2%; }
+.footer-facebook{ left: 50.4%; top: 85.0%; width: 9.5%; height: 2.5%; }
+.footer-amazon  { left: 50.4%; top: 88.0%; width: 9.5%; height: 2.5%; }
+.footer-email   { left: 50.4%; top: 91.0%; width: 9.5%; height: 2.5%; }
+
+.anchor {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+.anchor-top { top: 0; }
+.anchor-book { top: 48%; }
+.anchor-about { top: 72%; }
+.anchor-events { top: 76%; }
+
+.setup-note {
+  position: fixed;
+  z-index: 99;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  width: min(92vw, 620px);
+  padding: 14px 18px;
+  border: 2px solid #f8d475;
+  border-radius: 14px;
+  background: #122c55;
+  box-shadow: 0 8px 30px rgba(0,0,0,.35);
+  color: #fff;
+  font: 700 15px/1.35 Arial, sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .artboard {
+    width: 100%;
+  }
+  .setup-note { font-size: 13px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
