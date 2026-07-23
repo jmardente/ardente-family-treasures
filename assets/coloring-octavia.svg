@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1100">
+<rect width="850" height="1100" fill="white"/>
+<g fill="none" stroke="black" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+<text x="425" y="70" text-anchor="middle" font-family="Arial" font-size="38" fill="black" stroke="none">Octavia's Eight Helpful Arms</text>
+<ellipse cx="425" cy="390" rx="145" ry="125"/>
+<circle cx="380" cy="365" r="13"/><circle cx="470" cy="365" r="13"/>
+<path d="M375 445q50 45 100 0"/>
+<path d="M320 470C180 560 180 760 100 840"/>
+<path d="M350 485C260 630 320 790 245 915"/>
+<path d="M390 500C350 670 435 800 380 955"/>
+<path d="M420 505C410 680 515 820 485 965"/>
+<path d="M455 500C520 650 610 720 600 900"/>
+<path d="M485 485C610 600 690 635 720 820"/>
+<path d="M510 470C665 525 725 565 780 690"/>
+<path d="M300 445C165 470 100 550 70 670"/>
+<circle cx="140" cy="210" r="30"/><circle cx="720" cy="210" r="22"/>
+<path d="M0 1000Q130 940 260 1000T520 1000T780 1000T1040 1000"/>
+</g></svg>
