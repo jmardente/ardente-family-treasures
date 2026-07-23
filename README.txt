@@ -1,36 +1,29 @@
-ARDENTE BOOKS AND GIFTS WEBSITE
+ARDENTE FAMILY TREASURES WEBSITE
 
-FILES
-- index.html: the website
-- styles.css: colors and layout
-- script.js: mobile menu and copyright year
+BRANDING
+Business name: Ardente Family Treasures
+Tagline: Home of Cora's Ocean Adventures
 
-HOW TO VIEW
-1. Open the folder.
-2. Double-click index.html.
-3. It will open in your web browser.
+FILES TO UPLOAD TO GITHUB
+- index.html
+- styles.css
+- script.js
+- cora-waving.png
 
-HOW TO PUBLISH FOR FREE WITH GITHUB PAGES
-1. Create a free account at github.com.
-2. Create a new public repository named ardente-books-and-gifts.
-3. Upload index.html, styles.css, and script.js.
-4. Open the repository Settings.
-5. Choose Pages.
-6. Under “Build and deployment,” select “Deploy from a branch.”
-7. Choose the main branch and the root folder, then save.
-8. GitHub will provide a free website address.
+HOW TO UPDATE YOUR GITHUB WEBSITE
+1. Open your Ardente Family Treasures repository.
+2. Click Add file, then Upload files.
+3. Upload the four files listed above.
+4. Allow GitHub to replace the older versions.
+5. Scroll down and click Commit changes.
+6. Wait one to five minutes.
+7. Visit your GitHub Pages address and refresh the page.
 
-IMPORTANT ITEMS TO CUSTOMIZE
-- Replace the Amazon search link with the exact Amazon book page when available.
-- Replace the Facebook share link with the direct Facebook page URL if you obtain it.
-- Replace the sample book and product descriptions with your final wording.
-- Add real book-cover and product photographs later.
-- Add prices when decided.
+If your repository is named ardente-family-treasures, the address will usually be:
+https://jmardente.github.io/ardente-family-treasures/
 
-ONLINE CHECKOUT
-The current store uses email order buttons, so it works immediately without monthly fees.
-For card payments, create a Square Online, PayPal, or Stripe payment link and replace each
-“Request an Order” link with the corresponding checkout link.
+DIRECT AMAZON LINK
+https://www.amazon.com/dp/B0H9X346WF
 
-CONTACT EMAIL
+CONTACT
 JMARDENTE@OUTLOOK.COM
