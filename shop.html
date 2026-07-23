@@ -1,1 +1,556 @@
 shop.html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta
+    name="description"
+    content="Shop signed books and magical gifts from Ardente Family Treasures."
+  />
+
+  <title>Shop | Ardente Family Treasures</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #ffffff;
+      background:
+        linear-gradient(
+          rgba(3, 31, 67, 0.76),
+          rgba(4, 72, 113, 0.85)
+        ),
+        url("assets/ardente-homepage.png") center/cover fixed;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    /* Navigation */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(2, 27, 59, 0.88);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(12px);
+    }
+
+    .navbar {
+      width: min(1180px, 92%);
+      margin: auto;
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      text-decoration: none;
+      font-size: clamp(1.15rem, 2.5vw, 1.75rem);
+      font-weight: bold;
+      letter-spacing: 0.04em;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 999px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      transition: 0.25s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      background: rgba(255, 255, 255, 0.18);
+      transform: translateY(-1px);
+    }
+
+    /* Hero */
+
+    .shop-hero {
+      width: min(1100px, 92%);
+      margin: 55px auto 35px;
+      padding: 60px 28px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 32px;
+      background:
+        radial-gradient(
+          circle at top,
+          rgba(104, 219, 255, 0.22),
+          transparent 45%
+        ),
+        rgba(4, 50, 88, 0.68);
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(8px);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .shop-hero::before,
+    .shop-hero::after {
+      content: "✦";
+      position: absolute;
+      color: rgba(164, 239, 255, 0.75);
+      font-size: 2rem;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .shop-hero::before {
+      top: 28px;
+      left: 10%;
+    }
+
+    .shop-hero::after {
+      right: 12%;
+      bottom: 35px;
+      animation-delay: 1.4s;
+    }
+
+    @keyframes float {
+      0%,
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-12px) rotate(12deg);
+      }
+    }
+
+    .eyebrow {
+      margin-bottom: 14px;
+      color: #bcefff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+      font-weight: bold;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .shop-hero h1 {
+      margin-bottom: 18px;
+      font-size: clamp(2.5rem, 7vw, 5.3rem);
+      line-height: 1;
+      color: #ffffff;
+      text-shadow:
+        0 3px 0 rgba(0, 68, 110, 0.7),
+        0 8px 25px rgba(0, 0, 0, 0.45);
+    }
+
+    .shop-hero p {
+      max-width: 720px;
+      margin: auto;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(1rem, 2.3vw, 1.25rem);
+      line-height: 1.7;
+      color: #e8faff;
+    }
+
+    /* Shop section */
+
+    .shop-section {
+      width: min(1180px, 92%);
+      margin: 0 auto 70px;
+    }
+
+    .section-heading {
+      margin: 45px 0 28px;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 10px;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+    }
+
+    .section-heading p {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #d9f6ff;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.94);
+      color: #10324b;
+      box-shadow: 0 22px 55px rgba(0, 0, 0, 0.28);
+      transition: transform 0.28s ease, box-shadow 0.28s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.38);
+    }
+
+    .product-image-wrap {
+      position: relative;
+      min-height: 360px;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        radial-gradient(circle at top, #d9f8ff, #94dcec 65%, #5fb1c8);
+    }
+
+    .product-image-wrap img {
+      width: 100%;
+      max-width: 280px;
+      max-height: 330px;
+      object-fit: contain;
+      border-radius: 8px;
+      filter: drop-shadow(0 15px 18px rgba(0, 0, 0, 0.28));
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      padding: 9px 13px;
+      border-radius: 999px;
+      background: #6e3fa4;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.8rem;
+      font-weight: bold;
+      box-shadow: 0 8px 20px rgba(72, 28, 110, 0.35);
+    }
+
+    .product-info {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding: 25px;
+    }
+
+    .product-info h3 {
+      margin-bottom: 10px;
+      color: #123d5c;
+      font-size: 1.65rem;
+      line-height: 1.2;
+    }
+
+    .product-description {
+      margin-bottom: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+      color: #486575;
+    }
+
+    .product-details {
+      margin-bottom: 22px;
+      padding-left: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: #35596d;
+    }
+
+    .price-row {
+      margin-top: auto;
+    }
+
+    .price {
+      display: block;
+      margin-bottom: 15px;
+      color: #542683;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2rem;
+      font-weight: 800;
+    }
+
+    .buy-button {
+      display: block;
+      width: 100%;
+      padding: 15px 22px;
+      border-radius: 999px;
+      text-align: center;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #ffffff;
+      background: linear-gradient(135deg, #713aa4, #306dc0);
+      box-shadow: 0 12px 24px rgba(73, 49, 143, 0.3);
+      transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    .buy-button:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.1);
+    }
+
+    .secure-note {
+      margin-top: 11px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.8rem;
+      color: #6e8794;
+    }
+
+    /* Coming soon card */
+
+    .coming-soon {
+      border: 2px dashed rgba(255, 255, 255, 0.5);
+      background: rgba(5, 53, 88, 0.74);
+      color: #ffffff;
+    }
+
+    .coming-soon .product-image-wrap {
+      background:
+        radial-gradient(circle, rgba(199, 240, 255, 0.35), transparent 65%),
+        linear-gradient(135deg, #2c7d9f, #493582);
+    }
+
+    .treasure-icon {
+      font-size: 7rem;
+      filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.25));
+    }
+
+    .coming-soon .product-info h3,
+    .coming-soon .product-description {
+      color: #ffffff;
+    }
+
+    .coming-label {
+      display: block;
+      padding: 14px;
+      border-radius: 999px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    /* Information area */
+
+    .shop-info {
+      width: min(900px, 92%);
+      margin: 0 auto 70px;
+      padding: 30px;
+      border-radius: 25px;
+      text-align: center;
+      background: rgba(3, 36, 68, 0.76);
+      border: 1px solid rgba(255, 255, 255, 0.23);
+      backdrop-filter: blur(8px);
+    }
+
+    .shop-info h2 {
+      margin-bottom: 12px;
+      font-size: 2rem;
+    }
+
+    .shop-info p {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.75;
+      color: #e5f9ff;
+    }
+
+    footer {
+      padding: 28px 20px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+      color: #d8f5ff;
+      background: rgba(2, 22, 48, 0.88);
+      border-top: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    @media (max-width: 700px) {
+      .navbar {
+        padding: 15px 0;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        justify-content: center;
+      }
+
+      .shop-hero {
+        margin-top: 28px;
+        padding: 48px 20px;
+      }
+
+      .product-image-wrap {
+        min-height: 320px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="index.html">
+        Ardente Family Treasures
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="shop.html">Shop</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="shop-hero">
+      <p class="eyebrow">Books, imagination and family treasures</p>
+
+      <h1>Magical Treasures Await</h1>
+
+      <p>
+        Discover signed books from Cora's Ocean Adventures and
+        special treasures created with love by the Ardente family.
+      </p>
+    </section>
+
+    <section class="shop-section">
+
+      <div class="section-heading">
+        <h2>Shop Our Treasures</h2>
+
+        <p>
+          Choose a treasure below. Secure checkout is handled by Stripe.
+        </p>
+      </div>
+
+      <div class="product-grid">
+
+        <!-- SIGNED BOOK -->
+
+        <article class="product-card">
+
+          <div class="product-image-wrap">
+
+            <!--
+              Upload your book-cover image into the assets folder.
+
+              Name it:
+              cora-book-cover.jpg
+
+              Or change the filename below to match your actual image.
+            -->
+
+            <img
+              src="assets/cora-book-cover.jpg"
+              alt="Cora and the Coral Reef book cover"
+            />
+
+            <span class="product-badge">Signed Copy</span>
+          </div>
+
+          <div class="product-info">
+            <h3>Cora and the Coral Reef</h3>
+
+            <p class="product-description">
+              Join Cora and Seymour on a magical underwater adventure
+              as they discover the beauty of the coral reef and learn
+              how kindness and teamwork can help protect the ocean.
+            </p>
+
+            <ul class="product-details">
+              <li>Personally signed copy</li>
+              <li>Beautiful full-color illustrations</li>
+              <li>A magical story for young readers</li>
+            </ul>
+
+            <div class="price-row">
+              <span class="price">$20.00</span>
+
+              <a
+                class="buy-button"
+                href="https://buy.stripe.com/bJeeV50JO9qnbxfbXJcAo00"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Buy Signed Copy
+              </a>
+
+              <p class="secure-note">
+                Secure payment through Stripe
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- FUTURE PRODUCTS -->
+
+        <article class="product-card coming-soon">
+
+          <div class="product-image-wrap">
+            <div class="treasure-icon" aria-hidden="true">🐚</div>
+          </div>
+
+          <div class="product-info">
+            <h3>More Family Treasures</h3>
+
+            <p class="product-description">
+              New books, handmade gifts and magical treasures will be
+              added to the shop soon.
+            </p>
+
+            <div class="price-row">
+              <span class="coming-label">Coming Soon</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="shop-info">
+      <h2>Thank You for Supporting Our Stories</h2>
+
+      <p>
+        Every purchase helps Ardente Family Treasures continue creating
+        heartfelt books, imaginative adventures and special keepsakes
+        for families to enjoy together.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2026 Ardente Family Treasures. All rights reserved.
+    </p>
+  </footer>
+
+</body>
+</html>
