@@ -1,0 +1,22 @@
+ARDENTE FAMILY TREASURES — LATEST FINAL WEBSITE
+
+This folder contains the newest version and all current updates.
+
+UPLOAD THESE ITEMS TO THE ROOT OF YOUR GITHUB REPOSITORY:
+- index.html
+- books.html
+- shop.html
+- about.html
+- events.html
+- contact.html
+- characters.html
+- styles.css
+- the complete assets folder
+
+IMPORTANT:
+1. Do not upload only the ZIP file.
+2. Unzip the package first.
+3. Upload everything inside the unzipped folder.
+4. Keep index.html in the main repository area.
+5. Keep the assets folder named exactly: assets
+6. This version uses the approved homepage design image with clickable links placed over it.
