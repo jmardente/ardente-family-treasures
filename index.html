@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ardente Family Treasures — signed books, gifts, keepsakes, and seasonal treasures." />
+  <title>Ardente Family Treasures</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Ardente Family Treasures home">
+      <span class="brand-title">Ardente Family Treasures</span>
+      <span class="brand-subtitle">Books • Gifts • Keepsakes</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#books">Books</a>
+      <a href="#gifts">Gifts</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button class="cart-button" id="openCart" type="button">
+        🛒 Cart <span id="cartCount">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Main artwork is intentionally unobstructed -->
+    <section class="hero" id="home" aria-label="Magical underwater Ardente Family Treasures artwork"></section>
+
+    <section class="category-strip" id="shop" aria-label="Shop categories">
+      <a href="#books">
+        <span>📚</span>
+        <strong>Signed Books</strong>
+        <small>Magical stories to treasure</small>
+      </a>
+
+      <a href="#gifts">
+        <span>🎁</span>
+        <strong>Family Gifts</strong>
+        <small>Special gifts for every occasion</small>
+      </a>
+
+      <a href="#gifts">
+        <span>🐚</span>
+        <strong>Keepsakes</strong>
+        <small>Ocean-inspired treasures</small>
+      </a>
+
+      <a href="#gifts">
+        <span>✨</span>
+        <strong>Seasonal</strong>
+        <small>Holiday collections coming soon</small>
+      </a>
+    </section>
+
+    <section class="shop-intro">
+      <div class="shop-intro-content">
+        <p class="eyebrow">Welcome to the Shop</p>
+        <h1>Books, Gifts & Family Treasures</h1>
+        <p>
+          Discover signed children's books, ocean-inspired keepsakes,
+          handmade gifts, and special treasures for the whole family.
+        </p>
+      </div>
+    </section>
+
+    <section class="section books-section" id="books">
+      <div class="section-heading">
+        <p class="eyebrow">Available Now</p>
+        <h2>Signed Books</h2>
+        <p>The book appears here in the store section, not over the main artwork.</p>
+      </div>
+
+      <div class="store-grid">
+        <article class="store-card featured-product">
+          <div class="product-image-wrap">
+            <img
+              src="assets/cora-coral-reef-book.png"
+              alt="Cora and the Coral Reef signed book"
+              class="product-image"
+            />
+          </div>
+
+          <div class="product-details">
+            <span class="badge">Signed Copy</span>
+            <h3>Cora and the Coral Reef</h3>
+            <p class="rating" aria-label="Five stars">★★★★★</p>
+            <p>
+              A heartwarming ocean adventure about courage, friendship,
+              teamwork, and believing in yourself.
+            </p>
+            <p class="price">$20.00</p>
+
+            <div class="quantity" aria-label="Choose quantity">
+              <button id="qtyMinus" type="button" aria-label="Decrease quantity">−</button>
+              <strong id="qtyDisplay">1</strong>
+              <button id="qtyPlus" type="button" aria-label="Increase quantity">+</button>
+            </div>
+
+            <div class="product-actions">
+              <button class="button gold" id="addToCart" type="button">Add to Cart</button>
+              <a
+                class="button purple"
+                href="https://buy.stripe.com/bJeeV50JO9qnbxfbXJcAo00"
+                target="_blank"
+                rel="noopener"
+              >
+                Buy Now — $20.00
+              </a>
+            </div>
+
+            <small class="secure-note">Secure payment handled by Stripe.</small>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section gifts" id="gifts">
+      <div class="section-heading">
+        <p class="eyebrow">Treasure Boutique</p>
+        <h2>More Family Treasures</h2>
+        <p>These collections are ready for your future product photos, prices, and Stripe products.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="placeholder">🔖</div>
+          <span class="coming">Coming Soon</span>
+          <h3>Bookmarks</h3>
+          <p>Colorful reading treasures inspired by Cora's ocean world.</p>
+        </article>
+
+        <article class="product-card">
+          <div class="placeholder">🐚</div>
+          <span class="coming">Coming Soon</span>
+          <h3>Ocean Keepsakes</h3>
+          <p>Meaningful ocean-inspired gifts for children and families.</p>
+        </article>
+
+        <article class="product-card">
+          <div class="placeholder">🎄</div>
+          <span class="coming">Coming Soon</span>
+          <h3>Seasonal Treasures</h3>
+          <p>Holiday and special-occasion gifts made for lasting memories.</p>
+        </article>
+
+        <article class="product-card">
+          <div class="placeholder">🎁</div>
+          <span class="coming">Coming Soon</span>
+          <h3>Handmade Gifts</h3>
+          <p>Unique family treasures created and selected with love.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">Our Story</p>
+        <h2>Made for Families</h2>
+      </div>
+      <p class="narrow-copy">
+        Ardente Family Treasures brings together imaginative children's books,
+        meaningful gifts, and keepsakes created to inspire wonder and lasting memories.
+      </p>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Stay Connected</p>
+        <h2>Contact Ardente Family Treasures</h2>
+      </div>
+
+      <form class="contact-form" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+
+        <button class="button purple" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <aside class="cart-panel" id="cartPanel" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCart" type="button" aria-label="Close cart">×</button>
+    </div>
+
+    <div id="cartItems" class="cart-items">
+      <p class="empty-cart">Your cart is empty.</p>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+
+      <a
+        class="button purple full-width"
+        id="checkoutButton"
+        href="https://buy.stripe.com/bJeeV50JO9qnbxfbXJcAo00"
+        target="_blank"
+        rel="noopener"
+      >
+        Checkout with Stripe
+      </a>
+    </div>
+  </aside>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <footer class="site-footer">
+    <p>© 2026 Ardente Family Treasures. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
