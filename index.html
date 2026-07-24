@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ardente Family Treasures — home of Cora's Ocean Adventures, books, gifts, and family treasures." />
+  <title>Ardente Family Treasures</title>
+  <link rel="preload" href="assets/homepage-background.png" as="image" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="home">
+    <a class="brand" href="#home" aria-label="Ardente Family Treasures home">Ardente Family Treasures</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">☰</button>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#books">Books</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#contact">Contact</a>
+      <a class="facebook-link" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+      <button class="cart-button" type="button" data-open-cart>Cart <span id="cart-count">0</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Ardente Family Treasures welcome">
+      <div class="hero-overlay">
+        <div class="hero-copy">
+          <p class="eyebrow">Home of Cora's Ocean Adventures</p>
+          <h1>Inspiring Young Hearts</h1>
+          <p class="script-line">Through Ocean Adventures</p>
+          <p>We create heartwarming stories and gifts that spark imagination, build confidence, and celebrate the magic of family.</p>
+          <div class="hero-actions">
+            <a class="button button-purple" href="#about">Meet Cora</a>
+            <a class="button button-teal" href="#shop">Explore the Shop</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <p class="eyebrow">Books & Treasured Gifts</p>
+        <h2>Shop Ardente Family Treasures</h2>
+        <p>Browse on our website, add items to your cart, and use Stripe only when you are ready to pay.</p>
+      </div>
+
+      <div class="product-grid" id="books">
+        <article class="product-card" data-product-id="cora-coral-reef" data-name="Cora and the Coral Reef — Signed Copy" data-price="20">
+          <div class="product-image-wrap">
+            <img src="assets/cora-book.png" alt="Cora and the Coral Reef book cover" />
+          </div>
+          <div class="product-details">
+            <span class="product-badge">Signed Copy</span>
+            <h3>Cora and the Coral Reef</h3>
+            <p class="product-description">A heartwarming ocean adventure about courage, friendship, teamwork, and believing in yourself.</p>
+            <p class="price">$20.00</p>
+            <div class="product-actions">
+              <button class="button button-purple add-to-cart" type="button">Add to Cart</button>
+              <a class="button button-gold" href="https://buy.stripe.com/bJeeV50JO9qnbxfbXJcAo00" target="_blank" rel="noopener">Buy Now — $20.00</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card coming-soon">
+          <div class="gift-placeholder">🎁</div>
+          <div class="product-details">
+            <span class="product-badge">Coming Soon</span>
+            <h3>Handcrafted Gifts</h3>
+            <p class="product-description">Bookmarks, keepsakes, and other Ardente Family Treasures will appear here as they become available.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="story-section" id="about">
+      <div>
+        <p class="eyebrow">Meaningful Stories</p>
+        <h2>Made with Heart</h2>
+        <p>Ardente Family Treasures creates books and gifts that encourage kindness, confidence, imagination, faith, love, and family connection.</p>
+      </div>
+      <div id="events">
+        <p class="eyebrow">News & Events</p>
+        <h2>Follow Our Adventures</h2>
+        <p>Watch for new book announcements, products, behind-the-scenes fun, special events, and giveaways.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div>
+        <p class="eyebrow">Stay Connected</p>
+        <h2>Join Our Treasure Chest</h2>
+        <p>Sign up for updates about new books, products, special offers, and adventures.</p>
+      </div>
+      <form class="signup-form" onsubmit="event.preventDefault(); alert('Thank you! Email signup can be connected when you choose an email service.');">
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" type="email" placeholder="Enter your email address" required />
+        <button class="button button-purple" type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-label="Shopping cart">
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">Your Treasure Cart</p>
+        <h2>Shopping Cart</h2>
+      </div>
+      <button class="close-cart" type="button" data-close-cart aria-label="Close shopping cart">×</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-empty" id="cart-empty">Your cart is empty.</div>
+    <div class="cart-summary">
+      <div class="cart-total-row"><span>Total</span><strong id="cart-total">$0.00</strong></div>
+      <a id="checkout-button" class="button button-gold checkout-button disabled" href="https://buy.stripe.com/bJeeV50JO9qnbxfbXJcAo00" target="_blank" rel="noopener" aria-disabled="true">Checkout with Stripe</a>
+      <p class="checkout-note">Stripe securely collects payment. For this book, select the final quantity on Stripe if quantity adjustment is enabled.</p>
+    </div>
+  </aside>
+  <div class="cart-backdrop" data-close-cart></div>
+
+  <footer>
+    <strong>Ardente Family Treasures</strong>
+    <span>Home of Cora's Ocean Adventures</span>
+    <span>© 2026 Ardente Family Treasures. All rights reserved.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
