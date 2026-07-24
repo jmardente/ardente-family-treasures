@@ -22,3 +22,11 @@ The hero artwork is completely unobstructed.
 The signed book appears below the artwork in a clean store section.
 The Buy Now and checkout buttons use this Stripe link:
 https://buy.stripe.com/bJeeV50JO9qnbxfbXJcAo00
+
+
+EXTERNAL LINKS INCLUDED
+Amazon:
+https://www.amazon.com/dp/B0H9X346WF
+
+Facebook:
+http://www.facebook.com/share/1BS6p4Ptz2/
