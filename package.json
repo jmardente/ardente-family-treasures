@@ -1,0 +1,8 @@
+{
+  "name": "ardente-family-treasures",
+  "version": "2.0.0",
+  "private": true,
+  "dependencies": {
+    "stripe": "^18.0.0"
+  }
+}
