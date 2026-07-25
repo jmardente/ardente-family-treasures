@@ -1,4 +1,4 @@
-const stripeLink = "https://buy.stripe.com/bJeeV50JO9qnbxfbXJcAo00";
+const stripeLink = "https://buy.stripe.com/8x214f78c6eb1WFf9VcAo01";
 const productName = "Signed Cora and the Coral Reef";
 const unitPrice = 20;
 
