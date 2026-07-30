@@ -710,8 +710,8 @@ textarea {
 .hero {
   width: 100%;
   min-height: 0;
-  aspect-ratio: 16 / 9;
-  background-size: contain;
+  aspect-ratio: 5 / 4;
+  background-size: 100% 100%;
   background-position: center top;
   background-repeat: no-repeat;
   background-color: #075268;
@@ -720,8 +720,8 @@ textarea {
 @media (max-width: 620px) {
   .hero {
     min-height: 0;
-    aspect-ratio: 16 / 9;
-    background-size: contain;
+    aspect-ratio: 5 / 4;
+    background-size: 100% 100%;
     background-position: center top;
   }
 }
