@@ -556,7 +556,7 @@ textarea {
   }
 
   .site-nav {
-    position: absolute;
+    position: relative;
     top: 82px;
     right: 18px;
     display: none;
@@ -664,4 +664,31 @@ textarea {
 
 .footer-links a:hover {
   text-decoration: underline;
+}
+/* Smaller green navigation strip */
+.site-header,
+header {
+  min-height: 48px;
+  padding: 4px 18px;
+}
+
+/* Keep navigation buttons compact */
+.site-header nav a,
+header nav a {
+  padding: 6px 9px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Place the green strip at the very top */
+.site-header,
+header {
+  position: relative;
+  top: 0;
+  z-index: 20;
+}
+
+/* Keep the main artwork below the strip */
+.hero {
+  margin-top: 0;
 }
