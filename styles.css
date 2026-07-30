@@ -102,11 +102,13 @@ textarea {
 }
 
 .hero {
+  width: 100%;
   min-height: clamp(420px, 68vw, 850px);
   background-image: url("assets/hero-background.png");
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-color: #06475c;
 }
 
 .category-strip {
