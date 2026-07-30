@@ -109,58 +109,8 @@
         <p>The book appears here in the store section, not over the main artwork.</p>
       </div>
 
-      <div class="store-grid">
-        <article class="store-card featured-product">
-          <div class="product-image-wrap">
-            <img
-              src="assets/cora-coral-reef-book.png"
-              alt="Cora and the Coral Reef signed book"
-              class="product-image"
-            />
-          </div>
-
-          <div class="product-details">
-            <span class="badge">Signed Copy</span>
-            <h3>Cora and the Coral Reef</h3>
-            <p class="rating" aria-label="Five stars">★★★★★</p>
-            <p>
-              A heartwarming ocean adventure about courage, friendship,
-              teamwork, and believing in yourself.
-            </p>
-            <p class="price">$20.00</p>
-
-            <div class="quantity" aria-label="Choose quantity">
-              <button id="qtyMinus" type="button" aria-label="Decrease quantity">−</button>
-              <strong id="qtyDisplay">1</strong>
-              <button id="qtyPlus" type="button" aria-label="Increase quantity">+</button>
-            </div>
-
-       <div class="product-actions">
-    <a
-    class="button gold"
-    href="https://buy.stripe.com/8x214f78c6eb1WFf9VcAo01"
-    target="_blank"
-    rel="noopener noreferrer"
->
-    Purchase Signed Copy
-</a>
-
-<a
-    class="button purple"
-    href="https://buy.stripe.com/8x214f78c6eb1WFf9VcAo01"
-    target="_blank"
-    rel="noopener noreferrer"
->
-    Buy Now — $20.00
-</a>
-            </div>
-
-            <small class="secure-note">Secure payment handled by Stripe.</small>
-          </div>
-        </article>
-      </div>
-    </section>
-
+      <div class="store-grid" id="productGrid"></div>
+</section>
     <section class="section gifts" id="gifts">
       <div class="section-heading">
         <p class="eyebrow">Treasure Boutique</p>
@@ -276,7 +226,8 @@
     </div>
     <p>© 2026 Ardente Family Treasures. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
+<script src="products.js"></script>
+<script src="product-display.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
