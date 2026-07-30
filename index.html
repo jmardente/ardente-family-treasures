@@ -9,56 +9,68 @@
 </head>
 
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Ardente Family Treasures home">
-      <span class="brand-title">Ardente Family Treasures</span>
-      <span class="brand-subtitle">Books • Gifts • Keepsakes</span>
+  <!-- Main artwork appears first so the banner does not cover it -->
+<section
+  class="hero"
+  id="home"
+  aria-label="Magical underwater Ardente Family Treasures artwork"
+></section>
+
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="Ardente Family Treasures home">
+    <span class="brand-title">Ardente Family Treasures</span>
+    <span class="brand-subtitle">Books • Gifts • Keepsakes</span>
+  </a>
+
+  <button
+    class="menu-toggle"
+    id="menuToggle"
+    type="button"
+    aria-label="Open navigation"
+    aria-expanded="false"
+  >
+    ☰
+  </button>
+
+  <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#books">Books</a>
+    <a href="#gifts">Gifts</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+
+    <a
+      class="external-link"
+      href="https://www.amazon.com/dp/B0H9X346WF"
+      target="_blank"
+      rel="noopener"
+    >
+      Amazon
     </a>
 
-    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">
-      ☰
+    <a
+      class="external-link"
+      href="http://www.facebook.com/share/1BS6p4Ptz2/"
+      target="_blank"
+      rel="noopener"
+    >
+      Facebook
+    </a>
+
+    <button class="cart-button" id="openCart" type="button">
+      🛒 Cart <span id="cartCount">0</span>
     </button>
+  </nav>
+</header>
 
-    <nav class="site-nav" id="siteNav" aria-label="Main navigation">
-      <a href="#home">Home</a>
-      <a href="#shop">Shop</a>
-      <a href="#books">Books</a>
-      <a href="#gifts">Gifts</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a
-        class="external-link"
-        href="https://www.amazon.com/dp/B0H9X346WF"
-        target="_blank"
-        rel="noopener"
-      >
-        Amazon
-      </a>
-      <a
-        class="external-link"
-        href="http://www.facebook.com/share/1BS6p4Ptz2/"
-        target="_blank"
-        rel="noopener"
-      >
-        Facebook
-      </a>
-      <button class="cart-button" id="openCart" type="button">
-        🛒 Cart <span id="cartCount">0</span>
-      </button>
-    </nav>
-  </header>
-
-  <main>
-    <!-- Main artwork is intentionally unobstructed -->
-    <section class="hero" id="home" aria-label="Magical underwater Ardente Family Treasures artwork"></section>
-
-    <section class="category-strip" id="shop" aria-label="Shop categories">
-      <a href="#books">
-        <span>📚</span>
-        <strong>Signed Books</strong>
-        <small>Magical stories to treasure</small>
-      </a>
-
+<main>
+  <section class="category-strip" id="shop" aria-label="Shop categories">
+    <a href="#books">
+      <span>📚</span>
+      <strong>Signed Books</strong>
+      <small>Magical stories to treasure</small>
+    </a>
       <a href="#gifts">
         <span>🎁</span>
         <strong>Family Gifts</strong>
