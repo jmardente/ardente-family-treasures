@@ -703,3 +703,25 @@ textarea {
     padding: 7px 12px;
   }
 }
+/* ==========================================
+   SHOW THE FULL HERO ARTWORK
+   ========================================== */
+
+.hero {
+  width: 100%;
+  min-height: 0;
+  aspect-ratio: 16 / 9;
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #075268;
+}
+
+@media (max-width: 620px) {
+  .hero {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+    background-size: contain;
+    background-position: center top;
+  }
+}
