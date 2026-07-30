@@ -665,30 +665,41 @@ textarea {
 .footer-links a:hover {
   text-decoration: underline;
 }
-/* Smaller green navigation strip */
-.site-header,
-header {
-  min-height: 48px;
-  padding: 4px 18px;
+/* ==========================================
+   SMALLER TOP NAVIGATION BAR
+   ========================================== */
+
+.site-header {
+  min-height: 58px;
+  padding: 7px clamp(14px, 3vw, 38px);
+  gap: 14px;
+  position: relative;
+  top: 0;
+  z-index: 1000;
 }
 
-/* Keep navigation buttons compact */
-.site-header nav a,
-header nav a {
-  padding: 6px 9px;
+.site-nav {
+  gap: 12px;
+}
+
+.site-nav a {
+  padding: 4px 6px;
   font-size: 14px;
   line-height: 1.2;
 }
 
-/* Place the green strip at the very top */
-.site-header,
-header {
-  position: relative;
-  top: 0;
-  z-index: 20;
+.cart-button {
+  padding: 7px 13px;
 }
 
-/* Keep the main artwork below the strip */
 .hero {
   margin-top: 0;
+}
+
+/* Keep the mobile header comfortable to tap */
+@media (max-width: 620px) {
+  .site-header {
+    min-height: 60px;
+    padding: 7px 12px;
+  }
 }
