@@ -1,8 +1,8 @@
-window.PRODUCTS = [
+const PRODUCTS = [
   {
     id: "cora-coral-reef",
     name: "Cora and the Coral Reef",
-    price: 20.00,
+    price: 20.0,
     image: "assets/cora-coral-reef-book.png",
     alt: "Cora and the Coral Reef signed children's book",
     description:
@@ -10,20 +10,27 @@ window.PRODUCTS = [
     category: "books",
     badge: "Signed Copy",
     status: "available",
-    stripeLink: "https://buy.stripe.com/8x214f78c6eb1WFf9VcAo01"
+    stripePriceEnv: "STRIPE_PRICE_CORA_BOOK"
   },
-
   {
     id: "coral-reef-paint-set",
     name: "Coral Reef Ceramic Paint Set",
     price: 9.99,
     image: "assets/coral-reef-paint-set.png",
-    alt: "Coral Reef Ceramic Paint Set",
+    alt: "Small ceramic coral reef paint set with paints and brush",
     description:
       "Paint your own ocean-inspired coral reef! Includes three small ceramic coral reefs, six paint colors, and one paint brush. Coral pieces are smaller than they appear.",
     category: "crafts",
     badge: "New",
     status: "available",
-    stripeLink: "https://buy.stripe.com/3cI7sDcsw5a78l34vhcAo02"
+    stripePriceEnv: "STRIPE_PRICE_CORAL_PAINT_SET"
   }
 ];
+
+if (typeof window !== "undefined") {
+  window.PRODUCTS = PRODUCTS;
+}
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = PRODUCTS;
+}
