@@ -1,8 +1,5 @@
 const Stripe = require("stripe");
-
-const PRODUCT_PRICE_ENV = {
-  "coral-reef": "STRIPE_PRICE_CORAL_REEF"
-};
+const products = require("../../products.js");
 
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
@@ -14,23 +11,30 @@ exports.handler = async (event) => {
       throw new Error("Stripe is not configured yet.");
     }
 
-    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
     const { items = [] } = JSON.parse(event.body || "{}");
-
     if (!Array.isArray(items) || items.length === 0) {
       throw new Error("Your cart is empty.");
     }
 
+    const productMap = new Map(products.map((product) => [product.id, product]));
     const line_items = items.map(({ id, quantity }) => {
-      const envName = PRODUCT_PRICE_ENV[id];
-      const price = envName && process.env[envName];
-      if (!price) throw new Error(`Stripe Price ID is missing for ${id}.`);
+      const product = productMap.get(id);
+      if (!product || product.status !== "available") {
+        throw new Error(`Product is unavailable: ${id}`);
+      }
+
+      const price = process.env[product.stripePriceEnv];
+      if (!price) {
+        throw new Error(`Stripe Price ID is not configured for ${product.name}.`);
+      }
+
       return {
         price,
         quantity: Math.max(1, Math.min(20, Number(quantity) || 1))
       };
     });
 
+    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
     const siteUrl = process.env.URL || "http://localhost:8888";
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
@@ -38,7 +42,8 @@ exports.handler = async (event) => {
       success_url: `${siteUrl}/?checkout=success`,
       cancel_url: `${siteUrl}/?checkout=cancelled`,
       billing_address_collection: "auto",
-      shipping_address_collection: { allowed_countries: ["US"] }
+      shipping_address_collection: { allowed_countries: ["US"] },
+      allow_promotion_codes: true
     });
 
     return { statusCode: 200, body: JSON.stringify({ url: session.url }) };
