@@ -80,6 +80,12 @@ function removeFromCart(productId) {
   renderCart();
 }
 
+function clearCart() {
+  cart = [];
+  saveCart();
+  renderCart();
+}
+
 function renderCart() {
   sanitizeCart();
 
@@ -188,5 +194,5 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") hideCart();
 });
 
-window.StoreCart = { addToCart, renderCart, showCart };
+window.StoreCart = { addToCart, clearCart, renderCart, showCart };
 renderCart();
