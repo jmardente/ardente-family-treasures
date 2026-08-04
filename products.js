@@ -24,6 +24,6 @@ window.PRODUCTS = [
     category: "crafts",
     badge: "New",
     status: "available",
-    stripeLink: https://buy.stripe.com/3cI7sDcsw5a78l34vhcAo02
+    stripeLink: "https://buy.stripe.com/3cI7sDcsw5a78l34vhcAo02"
   }
 ];
