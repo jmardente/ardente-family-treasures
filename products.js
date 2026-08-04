@@ -17,7 +17,7 @@ window.PRODUCTS = [
     id: "coral-reef-paint-set",
     name: "Coral Reef Ceramic Paint Set",
     price: 9.99,
-    image: "assets/coral-reef-paint-set.jpg",
+    image: image: "assets/coral-reef-paint-set.jpg",
     alt: "Coral Reef Ceramic Paint Set",
     description:
       "Paint your own ocean-inspired coral reef! Includes three small ceramic coral reefs, six paint colors, and one paint brush. Coral pieces are smaller than they appear.",
