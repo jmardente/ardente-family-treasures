@@ -19,7 +19,7 @@ Add these under **Netlify → Site configuration → Environment variables**:
 
 Stripe Price IDs begin with `price_`. They are not Payment Link URLs.
 
-After adding the variables, trigger a new Netlify deployment.
+After adding or changing the variables, create a fresh Deploy Preview so the Netlify Function receives the latest values.
 
 ## Adding another product later
 
