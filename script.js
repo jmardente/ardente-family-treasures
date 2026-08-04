@@ -22,6 +22,5 @@ document.addEventListener("keydown", (event) => {
 
 const checkoutStatus = new URLSearchParams(window.location.search).get("checkout");
 if (checkoutStatus === "success") {
-  localStorage.removeItem("ardente-family-treasures-cart-v2");
-  window.StoreCart?.renderCart();
+  window.StoreCart?.clearCart();
 }
