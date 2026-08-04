@@ -6,7 +6,7 @@ function formatPrice(price) {
 
 function createProductCard(product) {
   const article = document.createElement("article");
-  article.className = "store-card featured-product";
+  article.className = "store-card";
 
   const isAvailable = product.status === "available";
 
@@ -16,41 +16,27 @@ function createProductCard(product) {
         src="${product.image}"
         alt="${product.alt || product.name}"
         class="product-image"
+        loading="lazy"
       />
     </div>
 
     <div class="product-details">
       ${product.badge ? `<span class="badge">${product.badge}</span>` : ""}
-
       <h3>${product.name}</h3>
-
-      <p class="rating" aria-label="Five stars">★★★★★</p>
-
       <p>${product.description}</p>
-
       <p class="price">${formatPrice(product.price)}</p>
 
       <div class="product-actions">
         ${
           isAvailable
             ? `
-              <a
+              <button
                 class="button gold"
-                href="${product.stripeLink}"
-                target="_blank"
-                rel="noopener noreferrer"
+                type="button"
+                data-add-to-cart="${product.id}"
               >
-                Purchase
-              </a>
-
-              <a
-                class="button purple"
-                href="${product.stripeLink}"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Buy Now — ${formatPrice(product.price)}
-              </a>
+                Add to Cart
+              </button>
             `
             : `
               <span class="coming">
@@ -60,11 +46,7 @@ function createProductCard(product) {
         }
       </div>
 
-      ${
-        isAvailable
-          ? `<small class="secure-note">Secure payment handled by Stripe.</small>`
-          : ""
-      }
+      ${isAvailable ? `<small class="secure-note">Secure checkout handled by Stripe.</small>` : ""}
     </div>
   `;
 
@@ -72,12 +54,9 @@ function createProductCard(product) {
 }
 
 function displayProducts() {
-  if (!productGrid || !Array.isArray(window.PRODUCTS)) {
-    return;
-  }
+  if (!productGrid || !Array.isArray(window.PRODUCTS)) return;
 
   productGrid.innerHTML = "";
-
   window.PRODUCTS.forEach((product) => {
     productGrid.appendChild(createProductCard(product));
   });
