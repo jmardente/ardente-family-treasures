@@ -13,6 +13,19 @@ const PRODUCTS = [
     stripePriceEnv: "STRIPE_PRICE_CORA_BOOK"
   },
   {
+    id: "cora-coloring-book",
+    name: "Cora's Ocean Adventures Coloring Book",
+    price: 7.99,
+    image: "assets/cora-ocean-adventures-coloring-book.png",
+    alt: "Cora's Ocean Adventures Meet the Ardente Ocean Family coloring book",
+    description:
+      "Meet Cora and the entire Ardente ocean family! Dive beneath the waves and get to know Seymour, Octavia, Pinch, Sophie, Quinn, Jackie, and many more lovable friends. Every page is filled with fun characters, ocean adventures, and creative coloring that brings the magical world of Cora's Ocean Adventures to life.",
+    category: "books",
+    badge: "Meet the Family",
+    status: "available",
+    stripePriceEnv: "STRIPE_PRICE_CORA_COLORING_BOOK"
+  },
+  {
     id: "coral-reef-paint-set",
     name: "Coral Reef Ceramic Paint Set",
     price: 9.99,
