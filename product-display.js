@@ -1,4 +1,33 @@
 const productGrid = document.getElementById("productGrid");
+const categoryFilters = document.getElementById("categoryFilters");
+const shopHeading = document.getElementById("shopHeading");
+const shopDescription = document.getElementById("shopDescription");
+const emptyCategory = document.getElementById("emptyCategory");
+
+const CATEGORY_COPY = {
+  all: {
+    heading: "All Products",
+    description: "Browse all available books, crafts, and family treasures."
+  },
+  books: {
+    heading: "Books",
+    description: "Stories and signed books from Ardente Family Treasures."
+  },
+  crafts: {
+    heading: "DIY & Crafts",
+    description: "Creative projects and paint-your-own treasures for family fun."
+  },
+  "halloween-diy": {
+    heading: "🎃 Halloween DIY",
+    description: "Spooky, cute, and creative Halloween projects to make your own."
+  },
+  seasonal: {
+    heading: "Seasonal",
+    description: "Special holiday and seasonal treasures throughout the year."
+  }
+};
+
+let activeCategory = "all";
 
 function formatPrice(price) {
   return `$${Number(price).toFixed(2)}`;
@@ -7,6 +36,7 @@ function formatPrice(price) {
 function createProductCard(product) {
   const article = document.createElement("article");
   article.className = "store-card";
+  article.dataset.category = product.category || "uncategorized";
 
   const isAvailable = product.status === "available";
 
@@ -53,13 +83,42 @@ function createProductCard(product) {
   return article;
 }
 
-function displayProducts() {
+function displayProducts(category = activeCategory) {
   if (!productGrid || !Array.isArray(window.PRODUCTS)) return;
 
+  activeCategory = category;
+  const products = category === "all"
+    ? window.PRODUCTS
+    : window.PRODUCTS.filter((product) => product.category === category);
+
   productGrid.innerHTML = "";
-  window.PRODUCTS.forEach((product) => {
+  products.forEach((product) => {
     productGrid.appendChild(createProductCard(product));
   });
+
+  if (emptyCategory) {
+    emptyCategory.hidden = products.length > 0;
+  }
+
+  const copy = CATEGORY_COPY[category] || CATEGORY_COPY.all;
+  if (shopHeading) shopHeading.textContent = copy.heading;
+  if (shopDescription) shopDescription.textContent = copy.description;
+
+  document.querySelectorAll("[data-category]").forEach((button) => {
+    button.classList.toggle("active", button.dataset.category === category);
+  });
 }
+
+categoryFilters?.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-category]");
+  if (!button) return;
+  displayProducts(button.dataset.category);
+});
+
+document.querySelectorAll("[data-category-link]").forEach((link) => {
+  link.addEventListener("click", () => {
+    displayProducts(link.dataset.categoryLink);
+  });
+});
 
 displayProducts();
