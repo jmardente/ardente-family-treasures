@@ -54,7 +54,7 @@ const PRODUCTS = [
   {
     id: "3d-bat",
     name: "3D Bat Halloween DIY",
-    price: 12.99,
+    price: 19.99,
     image: "assets/3D-bat.png",
     alt: "3D bat Halloween DIY craft",
     description:
