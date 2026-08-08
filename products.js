@@ -141,6 +141,19 @@ const PRODUCTS = [
     badge: "Halloween DIY",
     status: "available",
     stripePriceEnv: "STRIPE_PRICE_HALLOWEEN_TRUCK"
+  },
+  {
+    id: "ghost-pumpkin-cauldron",
+    name: "Ghost & Pumpkin Cauldron Ceramic Paint Kit",
+    price: 19.99,
+    image: "assets/ghost.with.cauldron.png",
+    alt: "Ghost and pumpkin cauldron Halloween ceramic paint kit",
+    description:
+      "Paint your own ghost and pumpkin cauldron Halloween decoration! This DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    stripePriceEnv: "STRIPE_PRICE_GHOST_CAULDRON"
   }
 ];
 
