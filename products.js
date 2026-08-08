@@ -67,7 +67,7 @@ const PRODUCTS = [
   {
     id: "boo-halloween-diy",
     name: "BOO Halloween DIY",
-    price: 12.99,
+    price: 17.99,
     image: "assets/boo.png",
     alt: "BOO Halloween DIY craft",
     description:
