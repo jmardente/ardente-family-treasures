@@ -20,10 +20,6 @@ const CATEGORY_COPY = {
   "halloween-diy": {
     heading: "🎃 Halloween DIY",
     description: "Spooky, cute, and creative Halloween projects to make your own."
-  },
-  seasonal: {
-    heading: "Seasonal",
-    description: "Special holiday and seasonal treasures throughout the year."
   }
 };
 
