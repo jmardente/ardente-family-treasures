@@ -146,7 +146,7 @@ const PRODUCTS = [
     id: "ghost-pumpkin-cauldron",
     name: "Ghost & Pumpkin Cauldron Ceramic Paint Kit",
     price: 19.99,
-    image: "assets/ghost.with.cauldron.png",
+    image: "assets/ghost-with-cauldron.png",
     alt: "Ghost and pumpkin cauldron Halloween ceramic paint kit",
     description:
       "Paint your own ghost and pumpkin cauldron Halloween decoration! This DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.",
@@ -250,7 +250,7 @@ const PRODUCTS = [
     id: "spooky-tree-with-ghosts",
     name: "Spooky Tree with Ghosts Ceramic Paint Kit",
     price: 24.99,
-    image: "assets/spooky-tree-with-ghost.png",
+    image: "assets/spooky-tree-with ghost.png",
     alt: "Spooky tree filled with friendly ghosts Halloween ceramic paint kit",
     description:
       "Paint your own spooky tree filled with friendly ghosts! This Halloween DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.",
