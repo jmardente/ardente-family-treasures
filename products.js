@@ -193,6 +193,19 @@ const PRODUCTS = [
     badge: "Halloween DIY",
     status: "available",
     stripePriceEnv: "STRIPE_PRICE_GNOME_BOO"
+  },
+  {
+    id: "frankenstein-planter",
+    name: "Frankenstein Planter Ceramic Paint Kit",
+    price: 24.99,
+    image: "assets/frankenstein-planter.png",
+    alt: "Frankenstein-style Halloween ceramic planter paint kit",
+    description:
+      "Paint your own spooky Frankenstein-style ceramic planter! This DIY Halloween kit includes the ceramic planter, six paint colors, and one paint brush. Free shipping included.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    stripePriceEnv: "STRIPE_PRICE_FRANKENSTEIN_PLANTER"
   }
 ];
 
