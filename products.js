@@ -224,7 +224,7 @@ const PRODUCTS = [
     id: "cat-on-pumpkin",
     name: "Cat on Pumpkin Ceramic Paint Kit",
     price: 12.99,
-    image: "assets/cat-on-pumpkin.png",
+    image: "assets/cat-on-pumkin.png",
     alt: "Flat cat sitting on a pumpkin Halloween ceramic paint kit",
     description:
       "Paint your own flat cat-on-pumpkin Halloween decoration! This DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.",
