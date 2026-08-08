@@ -154,6 +154,19 @@ const PRODUCTS = [
     badge: "Halloween DIY",
     status: "available",
     stripePriceEnv: "STRIPE_PRICE_GHOST_CAULDRON"
+  },
+  {
+    id: "scary-clown-head",
+    name: "Scary Clown Head Ceramic Paint Kit",
+    price: 19.99,
+    image: "assets/scary-clown-head.png",
+    alt: "Scary clown head Halloween ceramic paint kit",
+    description:
+      "Paint your own creepy scary clown head Halloween decoration! This DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    stripePriceEnv: "STRIPE_PRICE_SCARY_CLOWN_HEAD"
   }
 ];
 
