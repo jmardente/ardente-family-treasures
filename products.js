@@ -42,7 +42,7 @@ const PRODUCTS = [
     id: "mini-haunted-house-paint-set",
     name: "Mini Haunted House Halloween Paint Set",
     price: 29.99,
-    image: "assets/mini-haunted-house-halloween-paint-set.jpg",
+    image: "assets/mini-haunted-house-halloween-paint-set.png",
     alt: "Mini haunted house Halloween ceramic paint set with spooky figures",
     description:
       "Create your own spooky Halloween display! This DIY ceramic paint set includes the mini Halloween pieces shown, six paint colors, and one paint brush. A fun seasonal craft for families and Halloween decorating. Free shipping included.",
