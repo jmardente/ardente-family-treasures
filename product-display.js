@@ -13,6 +13,10 @@ const CATEGORY_COPY = {
     heading: "Books",
     description: "Stories and signed books from Ardente Family Treasures."
   },
+  "cora-diy": {
+    heading: "🐚 Cora's DIY",
+    description: "Ocean-inspired crafts and creative projects from Cora's Ocean Adventures."
+  },
   crafts: {
     heading: "DIY & Crafts",
     description: "Creative projects and paint-your-own treasures for family fun."
@@ -84,7 +88,7 @@ function displayProducts(category = activeCategory) {
 
   activeCategory = category;
   const products = category === "all"
-    ? window.PRODUCTS.filter((product) => product.category !== "halloween-diy")
+    ? window.PRODUCTS.filter((product) => !["halloween-diy", "cora-diy"].includes(product.category))
     : window.PRODUCTS.filter((product) => product.category === category);
 
   productGrid.innerHTML = "";
