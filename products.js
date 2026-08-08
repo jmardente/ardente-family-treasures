@@ -26,19 +26,6 @@ const PRODUCTS = [
     stripePriceEnv: "STRIPE_PRICE_CORA_COLORING_BOOK"
   },
   {
-    id: "coral-reef-paint-set",
-    name: "Coral Reef Ceramic Paint Set",
-    price: 9.99,
-    image: "assets/coral-reef-paint-set.png",
-    alt: "Small ceramic coral reef paint set with paints and brush",
-    description:
-      "Paint your own ocean-inspired coral reef! Includes three small ceramic coral reefs, six paint colors, and one paint brush. Coral pieces are smaller than they appear.",
-    category: "crafts",
-    badge: "New",
-    status: "available",
-    stripePriceEnv: "STRIPE_PRICE_CORAL_PAINT_SET"
-  },
-  {
     id: "mini-haunted-house-paint-set",
     name: "Mini Haunted House Halloween Paint Set",
     price: 29.99,
