@@ -102,6 +102,19 @@ const PRODUCTS = [
     badge: "Halloween DIY",
     status: "available",
     stripePriceEnv: "STRIPE_PRICE_ZOMBIE_HAND_ROSE"
+  },
+  {
+    id: "skull-in-claws",
+    name: "Skull in Claws Ceramic Paint Kit",
+    price: 19.99,
+    image: "assets/skull-in-claws.png",
+    alt: "Skull in claws Halloween ceramic paint kit",
+    description:
+      "Paint your own spooky skull-in-claws Halloween decoration! This DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    stripePriceEnv: "STRIPE_PRICE_SKULL_IN_CLAWS"
   }
 ];
 
