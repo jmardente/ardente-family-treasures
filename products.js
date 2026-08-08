@@ -81,7 +81,7 @@ const PRODUCTS = [
     id: "large-haunted-house-set",
     name: "Large Haunted House Halloween Paint Set",
     price: 39.99,
-    image: "assets/large-haunted-house-set.png",
+    image: "assets/large-haunted- house.png",
     alt: "Large haunted house Halloween ceramic paint set with spooky figures",
     description:
       "Create a full spooky Halloween scene! This large DIY ceramic paint set includes the Halloween pieces shown, six paint colors, and one paint brush. Free shipping included.",
@@ -133,7 +133,7 @@ const PRODUCTS = [
     id: "halloween-pumpkin-truck",
     name: "Halloween Pumpkin Truck Ceramic Paint Kit",
     price: 24.99,
-    image: "assets/halloween-truck.png",
+    image: "assets/halloween truck.png",
     alt: "Halloween pumpkin truck ceramic paint kit with ghosts and pumpkins",
     description:
       "Paint your own Halloween pumpkin truck packed with spooky seasonal details! This DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.",
