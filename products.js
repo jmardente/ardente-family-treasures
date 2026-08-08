@@ -206,6 +206,19 @@ const PRODUCTS = [
     badge: "Halloween DIY",
     status: "available",
     stripePriceEnv: "STRIPE_PRICE_FRANKENSTEIN_PLANTER"
+  },
+  {
+    id: "heart-brain",
+    name: "Heart & Brain Ceramic Paint Set",
+    price: 15.99,
+    image: "assets/heart-brain.png",
+    alt: "Anatomical heart and brain two-piece Halloween ceramic paint set",
+    description:
+      "Paint your own anatomical heart and brain Halloween decorations! This two-piece DIY ceramic set includes both ceramic pieces, six paint colors, and one paint brush. Free shipping included.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    stripePriceEnv: "STRIPE_PRICE_HEART_BRAIN"
   }
 ];
 
