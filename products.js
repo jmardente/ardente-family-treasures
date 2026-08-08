@@ -128,6 +128,19 @@ const PRODUCTS = [
     badge: "Halloween DIY",
     status: "available",
     stripePriceEnv: "STRIPE_PRICE_SPOOKY_TREE"
+  },
+  {
+    id: "halloween-pumpkin-truck",
+    name: "Halloween Pumpkin Truck Ceramic Paint Kit",
+    price: 24.99,
+    image: "assets/halloween-truck.png",
+    alt: "Halloween pumpkin truck ceramic paint kit with ghosts and pumpkins",
+    description:
+      "Paint your own Halloween pumpkin truck packed with spooky seasonal details! This DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    stripePriceEnv: "STRIPE_PRICE_HALLOWEEN_TRUCK"
   }
 ];
 
