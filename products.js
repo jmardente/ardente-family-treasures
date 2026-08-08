@@ -180,6 +180,19 @@ const PRODUCTS = [
     badge: "Halloween DIY",
     status: "available",
     stripePriceEnv: "STRIPE_PRICE_GHOST_BOO"
+  },
+  {
+    id: "gnome-boo",
+    name: "Gnome & BOO Ceramic Paint Set",
+    price: 24.99,
+    image: "assets/gnome-boo.png",
+    alt: "Halloween gnome and BOO two-piece ceramic paint set",
+    description:
+      "Paint your own Halloween gnome and BOO decorations! This two-piece DIY ceramic set includes both ceramic pieces, six paint colors, and one paint brush. Free shipping included.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    stripePriceEnv: "STRIPE_PRICE_GNOME_BOO"
   }
 ];
 
