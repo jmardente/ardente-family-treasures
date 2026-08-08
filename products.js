@@ -26,6 +26,18 @@ const PRODUCTS = [
     stripePriceEnv: "STRIPE_PRICE_CORA_COLORING_BOOK"
   },
   {
+    id: "cora-magical-necklace",
+    name: "Cora and the Magical Necklace",
+    price: null,
+    image: "assets/Cora and the Magical Necklace Book Cover.png",
+    alt: "Cora and the Magical Necklace children's book cover by JM Ardente",
+    description:
+      "Where the adventure began. Before Cora explored the coral reef, she discovered a mysterious pink seashell necklace that would change everything. Follow Cora as she uncovers its magic, meets new ocean friends, and begins the adventure that started it all. Sometimes the smallest treasures lead to the greatest adventures...",
+    category: "books",
+    badge: "Coming Soon",
+    status: "coming-soon"
+  },
+  {
     id: "mini-haunted-house-paint-set",
     name: "Mini Haunted House Halloween Paint Set",
     price: 29.99,
