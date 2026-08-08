@@ -89,6 +89,19 @@ const PRODUCTS = [
     badge: "Halloween DIY",
     status: "available",
     stripePriceEnv: "STRIPE_PRICE_LARGE_HAUNTED_HOUSE_SET"
+  },
+  {
+    id: "zombie-hand-rose",
+    name: "Zombie Hand & Rose Ceramic Paint Kit",
+    price: 19.99,
+    image: "assets/zombie-hand-rose.png",
+    alt: "Zombie hand holding a rose Halloween ceramic paint kit",
+    description:
+      "Paint your own creepy-cute zombie hand holding a rose! This Halloween DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    stripePriceEnv: "STRIPE_PRICE_ZOMBIE_HAND_ROSE"
   }
 ];
 
