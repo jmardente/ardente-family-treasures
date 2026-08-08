@@ -219,6 +219,19 @@ const PRODUCTS = [
     badge: "Halloween DIY",
     status: "available",
     stripePriceEnv: "STRIPE_PRICE_HEART_BRAIN"
+  },
+  {
+    id: "cat-on-pumpkin",
+    name: "Cat on Pumpkin Ceramic Paint Kit",
+    price: 12.99,
+    image: "assets/cat-on-pumpkin.png",
+    alt: "Flat cat sitting on a pumpkin Halloween ceramic paint kit",
+    description:
+      "Paint your own flat cat-on-pumpkin Halloween decoration! This DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    stripePriceEnv: "STRIPE_PRICE_CAT_ON_PUMPKIN"
   }
 ];
 
