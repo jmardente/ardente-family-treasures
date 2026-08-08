@@ -50,6 +50,19 @@ const PRODUCTS = [
     badge: "Halloween DIY",
     status: "available",
     stripePriceEnv: "STRIPE_PRICE_HAUNTED_HOUSE_SET"
+  },
+  {
+    id: "3d-bat",
+    name: "3D Bat Halloween DIY",
+    price: 12.99,
+    image: "assets/3D-bat.png",
+    alt: "3D bat Halloween DIY craft",
+    description:
+      "Create your own spooky 3D bat! A fun Halloween DIY craft from Ardente Family Treasures.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    stripePriceEnv: "STRIPE_PRICE_3D_BAT"
   }
 ];
 
