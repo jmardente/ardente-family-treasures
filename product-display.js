@@ -6,8 +6,8 @@ const emptyCategory = document.getElementById("emptyCategory");
 
 const CATEGORY_COPY = {
   all: {
-    heading: "All Products",
-    description: "Browse all available books, crafts, and family treasures."
+    heading: "Featured Products",
+    description: "Browse our books and family treasures, or choose a category to explore more."
   },
   books: {
     heading: "Books",
@@ -88,7 +88,7 @@ function displayProducts(category = activeCategory) {
 
   activeCategory = category;
   const products = category === "all"
-    ? window.PRODUCTS
+    ? window.PRODUCTS.filter((product) => product.category !== "halloween-diy")
     : window.PRODUCTS.filter((product) => product.category === category);
 
   productGrid.innerHTML = "";
