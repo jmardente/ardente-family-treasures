@@ -76,6 +76,19 @@ const PRODUCTS = [
     badge: "Halloween DIY",
     status: "available",
     stripePriceEnv: "STRIPE_PRICE_BOO"
+  },
+  {
+    id: "large-haunted-house-set",
+    name: "Large Haunted House Halloween Paint Set",
+    price: 39.99,
+    image: "assets/large-haunted-house-set.png",
+    alt: "Large haunted house Halloween ceramic paint set with spooky figures",
+    description:
+      "Create a full spooky Halloween scene! This large DIY ceramic paint set includes the Halloween pieces shown, six paint colors, and one paint brush. Free shipping included.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    stripePriceEnv: "STRIPE_PRICE_LARGE_HAUNTED_HOUSE_SET"
   }
 ];
 
