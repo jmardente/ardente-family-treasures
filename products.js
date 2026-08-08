@@ -232,6 +232,19 @@ const PRODUCTS = [
     badge: "Halloween DIY",
     status: "available",
     stripePriceEnv: "STRIPE_PRICE_CAT_ON_PUMPKIN"
+  },
+  {
+    id: "spider-web-cauldron-lid",
+    name: "Spider Web Cauldron with Lid Ceramic Paint Kit",
+    price: 19.99,
+    image: "assets/spider-web-cauldron-lid.png",
+    alt: "Spider web cauldron with removable decorated lid Halloween ceramic paint kit",
+    description:
+      "Paint your own spooky 3D spider-web cauldron with removable decorated lid! This Halloween DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    stripePriceEnv: "STRIPE_PRICE_SPIDER_WEB_CAULDRON_LID"
   }
 ];
 
