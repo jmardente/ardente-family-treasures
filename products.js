@@ -115,6 +115,19 @@ const PRODUCTS = [
     badge: "Halloween DIY",
     status: "available",
     stripePriceEnv: "STRIPE_PRICE_SKULL_IN_CLAWS"
+  },
+  {
+    id: "spooky-tree",
+    name: "Spooky Tree Ceramic Paint Kit",
+    price: 15.99,
+    image: "assets/spooky-tree.png",
+    alt: "Spooky tree Halloween ceramic paint kit",
+    description:
+      "Paint your own spooky Halloween tree! This DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    stripePriceEnv: "STRIPE_PRICE_SPOOKY_TREE"
   }
 ];
 
