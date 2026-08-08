@@ -32,27 +32,37 @@
 
   <main>
     <section class="category-strip" aria-label="Shop categories">
-      <a href="#shop"><span>📚</span><strong>Signed Books</strong><small>Magical stories to treasure</small></a>
-      <a href="#shop"><span>🎨</span><strong>Paint Kits</strong><small>Creative ocean fun</small></a>
-      <a href="#gifts"><span>🐚</span><strong>Keepsakes</strong><small>Ocean-inspired treasures</small></a>
-      <a href="#gifts"><span>✨</span><strong>Seasonal</strong><small>Holiday collections coming soon</small></a>
+      <a href="#shop" data-category-link="books"><span>📚</span><strong>Books</strong><small>Stories to treasure</small></a>
+      <a href="#shop" data-category-link="crafts"><span>🎨</span><strong>DIY & Crafts</strong><small>Creative family fun</small></a>
+      <a href="#shop" data-category-link="halloween-diy"><span>🎃</span><strong>Halloween DIY</strong><small>Spooky crafts & projects</small></a>
+      <a href="#shop" data-category-link="seasonal"><span>✨</span><strong>Seasonal</strong><small>Holiday treasures</small></a>
     </section>
 
     <section class="shop-intro" id="shop">
       <div class="shop-intro-content">
         <p class="eyebrow">Welcome to the Shop</p>
-        <h1>Books, Crafts & Family Treasures</h1>
-        <p>Add your favorites to one cart and check out securely with Stripe.</p>
+        <h1>Shop by Category</h1>
+        <p>Choose a category below to find exactly what you're looking for.</p>
       </div>
     </section>
 
     <section class="section books-section">
       <div class="section-heading">
-        <p class="eyebrow">Available Now</p>
-        <h2>Shop All Products</h2>
-        <p>New products automatically appear here when they are added to products.js.</p>
+        <p class="eyebrow">Ardente Family Treasures</p>
+        <h2 id="shopHeading">All Products</h2>
+        <p id="shopDescription">Browse all available books, crafts, and family treasures.</p>
       </div>
+
+      <div class="category-filters" id="categoryFilters" aria-label="Filter products by category">
+        <button type="button" class="category-filter active" data-category="all">All Products</button>
+        <button type="button" class="category-filter" data-category="books">Books</button>
+        <button type="button" class="category-filter" data-category="crafts">DIY & Crafts</button>
+        <button type="button" class="category-filter halloween-filter" data-category="halloween-diy">🎃 Halloween DIY</button>
+        <button type="button" class="category-filter" data-category="seasonal">Seasonal</button>
+      </div>
+
       <div class="store-grid" id="productGrid"></div>
+      <p class="empty-category" id="emptyCategory" hidden>New treasures are coming soon in this category!</p>
     </section>
 
     <section class="section gifts" id="gifts">
