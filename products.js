@@ -167,6 +167,19 @@ const PRODUCTS = [
     badge: "Halloween DIY",
     status: "available",
     stripePriceEnv: "STRIPE_PRICE_SCARY_CLOWN_HEAD"
+  },
+  {
+    id: "ghost-boo",
+    name: "Ghost & BOO Ceramic Paint Set",
+    price: 24.99,
+    image: "assets/ghost-boo.png",
+    alt: "Ghost and BOO two-piece Halloween ceramic paint set",
+    description:
+      "Paint your own ghost and BOO Halloween decorations! This two-piece DIY ceramic set includes both ceramic pieces, six paint colors, and one paint brush. Free shipping included.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    stripePriceEnv: "STRIPE_PRICE_GHOST_BOO"
   }
 ];
 
