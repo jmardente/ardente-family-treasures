@@ -63,6 +63,19 @@ const PRODUCTS = [
     badge: "Halloween DIY",
     status: "available",
     stripePriceEnv: "STRIPE_PRICE_3D_BAT"
+  },
+  {
+    id: "boo-halloween-diy",
+    name: "BOO Halloween DIY",
+    price: 12.99,
+    image: "assets/boo.png",
+    alt: "BOO Halloween DIY craft",
+    description:
+      "Create your own BOO-themed Halloween decoration! A fun seasonal DIY craft from Ardente Family Treasures.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    stripePriceEnv: "STRIPE_PRICE_BOO"
   }
 ];
 
