@@ -39,6 +39,7 @@ function createProductCard(product) {
   article.dataset.category = product.category || "uncategorized";
 
   const isAvailable = product.status === "available";
+  const showPrice = product.price !== null && product.price !== undefined && product.status !== "coming-soon";
 
   article.innerHTML = `
     <div class="product-image-wrap">
@@ -54,7 +55,7 @@ function createProductCard(product) {
       ${product.badge ? `<span class="badge">${product.badge}</span>` : ""}
       <h3>${product.name}</h3>
       <p>${product.description}</p>
-      <p class="price">${formatPrice(product.price)}</p>
+      ${showPrice ? `<p class="price">${formatPrice(product.price)}</p>` : ""}
 
       <div class="product-actions">
         ${
