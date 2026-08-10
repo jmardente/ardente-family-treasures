@@ -103,7 +103,11 @@ function displayProducts(category = activeCategory) {
 
   const copy = CATEGORY_COPY[category] || CATEGORY_COPY.all;
   if (shopHeading) shopHeading.textContent = copy.heading;
-  if (shopDescription) shopDescription.textContent = copy.description;
+  if (shopDescription) {
+    shopDescription.innerHTML = category === "halloween-diy"
+      ? `<strong>🚚 FREE SHIPPING</strong><br>${copy.description}`
+      : copy.description;
+  }
 
   document.querySelectorAll("[data-category]").forEach((button) => {
     button.classList.toggle("active", button.dataset.category === category);
