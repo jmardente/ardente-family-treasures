@@ -1,5 +1,14 @@
 const PRODUCTS = [
   {
+    id: "handpainted-starfish-jewelry-holder",
+    name: "Handcrafted & Hand-Painted Starfish Jewelry Holder",
+    price: 12.99,
+    image: "assets/handcraft-painted-starfish-jewelry-holder.png",
+    alt: "Handcrafted and hand-painted turquoise starfish jewelry holder by Jamie",
+    description: "A one-of-a-kind handcrafted and hand-painted starfish dish, perfect for jewelry, keys, trinkets, or seaside décor. Each piece is individually made with care. Free U.S. shipping included.",
+    category: "handmade-gifts", badge: "Handmade by Jamie", status: "available"
+  },
+  {
     id: "cora-coral-reef",
     name: "Cora and the Coral Reef",
     price: 20.0,
