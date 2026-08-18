@@ -33,6 +33,10 @@ const CATEGORY_COPY = {
     heading: "🐚 Cora's DIY",
     description: "Ocean-inspired crafts and creative projects from Cora's Ocean Adventures."
   },
+  "handmade-gifts": {
+    heading: "💝 Handmade Gifts",
+    description: "One-of-a-kind handcrafted and hand-painted treasures made with care."
+  },
   crafts: {
     heading: "DIY & Crafts",
     description: "Creative projects and paint-your-own treasures for family fun."
