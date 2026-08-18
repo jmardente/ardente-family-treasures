@@ -39,6 +39,12 @@ const PRODUCTS = [
     category: "cora-diy", badge: "Cora's DIY", status: "available"
   },
   {
+    id: "jackies-fun-fact-set", name: "Jackie's Fun Fact Set", price: 12.99,
+    image: "assets/jackies-fun-fact-set.png", alt: "Jackie's Fun Fact Set with unfinished ocean ceramic pieces, six paints, brush, and optional glitter markers",
+    description: "Paint it, learn it, love it! Jackie's Fun Fact Set combines ocean-themed ceramic painting with fun facts about amazing ocean creatures. Includes the unfinished ceramic pieces shown, six paint colors, one brush, and free U.S. shipping. Upgrade with the 12-piece glitter marker set for $6.99.",
+    category: "cora-diy", badge: "Cora's DIY", status: "available"
+  },
+  {
     id: "mini-haunted-house-paint-set", name: "Mini Haunted House Halloween Paint Set", price: 29.99, image: "assets/mini-haunted-house-halloween-paint-set.png", alt: "Mini haunted house Halloween ceramic paint set with spooky figures", description: "Create your own spooky Halloween display! This DIY ceramic paint set includes the mini Halloween pieces shown, six paint colors, and one paint brush. A fun seasonal craft for families and Halloween decorating. Free shipping included.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_HAUNTED_HOUSE_SET"
   },
   { id: "3d-bat", name: "3D Bat Halloween DIY", price: 19.99, image: "assets/3D-bat.png", alt: "3D bat Halloween DIY craft", description: "Create your own spooky 3D bat! A fun Halloween DIY craft from Ardente Family Treasures.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_3D_BAT" },
