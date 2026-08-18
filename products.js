@@ -33,6 +33,12 @@ const PRODUCTS = [
     category: "cora-diy", badge: "Cora's DIY", status: "available"
   },
   {
+    id: "shell-collection-diy-set", name: "Ocean Friends Shell Collection DIY Paint Set", price: 9.99,
+    image: "assets/shell-collection.png", alt: "Ocean Friends Shell Collection unfinished ceramic sea-life pieces with six paints, brush, and optional glitter marker upgrade",
+    description: "Create your own colorful ocean friends! This DIY ceramic paint set includes the unfinished sea-life pieces shown, six paint colors, and one brush. Free U.S. shipping included. Upgrade with the 12-piece glitter marker set for $6.99.",
+    category: "cora-diy", badge: "Cora's DIY", status: "available"
+  },
+  {
     id: "conch-shell-jewelry-holder", name: "Conch Shell Jewelry Holder", price: 14.99,
     image: "assets/conch-shell.png", alt: "Unfinished ceramic conch shell jewelry holder with six paints and brush",
     description: "Paint and personalize your own ceramic conch shell jewelry holder, perfect for jewelry, treasures, and keepsakes. Includes six paint colors and one brush, with free U.S. shipping. Upgrade with the 12-piece glitter marker set for $6.99.",
