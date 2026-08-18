@@ -1,6 +1,15 @@
 const Stripe = require("stripe");
 const products = require("../../products.js");
 
+const EXTRA_PRODUCTS = [
+  {
+    id: "coral-reef-critters",
+    name: "Coral Reef Critters DIY Paint Set",
+    price: 12.99,
+    status: "available"
+  }
+];
+
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: JSON.stringify({ error: "Method not allowed." }) };
@@ -16,22 +25,35 @@ exports.handler = async (event) => {
       throw new Error("Your cart is empty.");
     }
 
-    const productMap = new Map(products.map((product) => [product.id, product]));
+    const productMap = new Map([...products, ...EXTRA_PRODUCTS].map((product) => [product.id, product]));
     const line_items = items.map(({ id, quantity }) => {
       const product = productMap.get(id);
       if (!product || product.status !== "available") {
         throw new Error(`Product is unavailable: ${id}`);
       }
 
-      const price = process.env[product.stripePriceEnv];
-      if (!price) {
-        throw new Error(`Stripe Price ID is not configured for ${product.name}.`);
+      const normalizedQuantity = Math.max(1, Math.min(20, Number(quantity) || 1));
+      const configuredPrice = product.stripePriceEnv ? process.env[product.stripePriceEnv] : null;
+
+      if (configuredPrice) {
+        return {
+          price: configuredPrice,
+          quantity: normalizedQuantity
+        };
       }
 
-      return {
-        price,
-        quantity: Math.max(1, Math.min(20, Number(quantity) || 1))
-      };
+      if (Number.isFinite(product.price)) {
+        return {
+          price_data: {
+            currency: "usd",
+            product_data: { name: product.name },
+            unit_amount: Math.round(product.price * 100)
+          },
+          quantity: normalizedQuantity
+        };
+      }
+
+      throw new Error(`Stripe Price ID is not configured for ${product.name}.`);
     });
 
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
