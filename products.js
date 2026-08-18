@@ -27,6 +27,12 @@ const PRODUCTS = [
     category: "cora-diy", badge: "Cora's DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_CORAL_REEF_SET"
   },
   {
+    id: "large-shell-craft-set", name: "Large Shell Craft Set", price: 24.99,
+    image: "assets/large-shell-set.png", alt: "Large Shell Craft Set with 12 unfinished ceramic shell pieces, six paints, brush, and optional glitter marker upgrade",
+    description: "Create your own ocean treasures with 12 unfinished ceramic shell pieces, including two functional holders, plus six paints and one brush. Free U.S. shipping included. Upgrade with the 12-piece glitter marker set for $6.99.",
+    category: "cora-diy", badge: "Cora's DIY", status: "available"
+  },
+  {
     id: "mini-haunted-house-paint-set", name: "Mini Haunted House Halloween Paint Set", price: 29.99, image: "assets/mini-haunted-house-halloween-paint-set.png", alt: "Mini haunted house Halloween ceramic paint set with spooky figures", description: "Create your own spooky Halloween display! This DIY ceramic paint set includes the mini Halloween pieces shown, six paint colors, and one paint brush. A fun seasonal craft for families and Halloween decorating. Free shipping included.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_HAUNTED_HOUSE_SET"
   },
   { id: "3d-bat", name: "3D Bat Halloween DIY", price: 19.99, image: "assets/3D-bat.png", alt: "3D bat Halloween DIY craft", description: "Create your own spooky 3D bat! A fun Halloween DIY craft from Ardente Family Treasures.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_3D_BAT" },
