@@ -1,5 +1,14 @@
 const PRODUCTS = [
   {
+    id: "handpainted-conch-shell",
+    name: "Handcrafted & Hand-Painted Conch Shell Keepsake",
+    price: 12.99,
+    image: "assets/handpainted-conch-shell.png",
+    alt: "Handcrafted and hand-painted purple conch shell keepsake by Jamie",
+    description: "A beautiful handcrafted and hand-painted shell-shaped keepsake, perfect for jewelry, small treasures, beach décor, or gifting. Handmade and painted by Jamie. Free U.S. shipping included.",
+    category: "handmade-gifts", badge: "Handmade by Jamie", status: "available"
+  },
+  {
     id: "handpainted-starfish-jewelry-holder",
     name: "Handcrafted & Hand-Painted Starfish Jewelry Holder",
     price: 12.99,
