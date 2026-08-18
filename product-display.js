@@ -4,6 +4,22 @@ const shopHeading = document.getElementById("shopHeading");
 const shopDescription = document.getElementById("shopDescription");
 const emptyCategory = document.getElementById("emptyCategory");
 
+const CORAL_REEF_CRITTERS = {
+  id: "coral-reef-critters",
+  name: "Coral Reef Critters DIY Paint Set",
+  price: 12.99,
+  image: "assets/coral-reef-critters.png",
+  alt: "Coral Reef Critters ceramic DIY paint set with dolphin, octopus, stingray, turtle, paints and brush",
+  description: "Create your own colorful ocean friends! This DIY ceramic set includes the four sea-creature pieces shown, six paint colors, one paint brush, and free U.S. shipping.",
+  category: "cora-diy",
+  badge: "Cora's DIY",
+  status: "available"
+};
+
+if (Array.isArray(window.PRODUCTS) && !window.PRODUCTS.some((product) => product.id === CORAL_REEF_CRITTERS.id)) {
+  window.PRODUCTS.push(CORAL_REEF_CRITTERS);
+}
+
 const CATEGORY_COPY = {
   all: {
     heading: "Featured Products",
