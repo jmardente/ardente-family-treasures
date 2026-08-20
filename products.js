@@ -1,5 +1,16 @@
 const PRODUCTS = [
   {
+    id: "glitter-marker-set",
+    name: "Glitter Marker Set — 12 Dual-Tip Markers",
+    price: 10.99,
+    image: "assets/file_00000000880481fbbbb6d785da4d54b2.png",
+    alt: "12 dual-tip glitter markers with 24 colors in reusable storage case",
+    description: "Add sparkle, color, and creativity to your next project! This fun set includes 12 dual-tip glitter markers with 24 colors and a reusable storage case. Perfect for DIY crafts, ceramic painting, wood projects, coloring, and decorating. Free U.S. shipping included.",
+    category: "diy-extras",
+    badge: "✨ DIY Extra Goodies",
+    status: "available"
+  },
+  {
     id: "diy-uv-glow-pens",
     name: "UV Glow Pens — 6 Piece Dual-Ended Set",
     price: 12.99,
