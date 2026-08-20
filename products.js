@@ -1,5 +1,16 @@
 const PRODUCTS = [
   {
+    id: "diy-uv-glow-pens",
+    name: "UV Glow Pens — 6 Piece Dual-Ended Set",
+    price: 12.99,
+    image: "assets/file_00000000378081fb907280b5792a42b3.png",
+    alt: "Six-piece dual-ended UV glow marker set with 12 colors",
+    description: "Add a little extra magic to your DIY creations! This 6-piece UV glow pen set has double-ended markers for 12 colorful options and glows under UV light. A fun extra for DIY kits, crafts, and creative projects. Free U.S. shipping included.",
+    category: "diy-extras",
+    badge: "✨ DIY Extra Goodies",
+    status: "available"
+  },
+  {
     id: "handpainted-conch-shell",
     name: "Handcrafted & Hand-Painted Conch Shell Keepsake",
     price: 12.99,
