@@ -29,6 +29,10 @@ const CATEGORY_COPY = {
     heading: "Books",
     description: "Stories and signed books from Ardente Family Treasures."
   },
+  "kids-gifts": {
+    heading: "🧸 Kids' Gifts",
+    description: "Fun, affordable gifts and little treasures chosen especially for kids."
+  },
   "cora-diy": {
     heading: "🐚 Cora's DIY",
     description: "Ocean-inspired crafts and creative projects from Cora's Ocean Adventures."
