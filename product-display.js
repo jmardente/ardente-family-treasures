@@ -15,6 +15,7 @@ const CATEGORY_COPY = {
   "diy-extras": { heading: "✨ DIY Extra Goodies", description: "Add a little extra magic to your DIY creations with fun paints, markers, tools, and creative goodies." },
   "handmade-gifts": { heading: "💝 Handmade Gifts", description: "One-of-a-kind handcrafted and hand-painted treasures made with care." },
   crafts: { heading: "DIY & Crafts", description: "Creative projects and paint-your-own treasures for family fun." },
+  "seasonal-halloween": { heading: "🎃 Spooktacular Halloween Gifts", description: "Handmade and seasonal Halloween treasures ready to bring a little spooky fun home." },
   "halloween-diy": { heading: "🎃 Halloween DIY", description: "Spooky, cute, and creative Halloween projects to make your own." }
 };
 let activeCategory = "all";
@@ -27,7 +28,7 @@ function createProductCard(product) {
 }
 function displayProducts(category = activeCategory) {
   if (!productGrid || !Array.isArray(window.PRODUCTS)) return; activeCategory = category;
-  const products = category === "all" ? window.PRODUCTS.filter((product) => !["halloween-diy", "cora-diy"].includes(product.category)) : window.PRODUCTS.filter((product) => product.category === category);
+  const products = category === "all" ? window.PRODUCTS.filter((product) => !["halloween-diy", "seasonal-halloween", "cora-diy"].includes(product.category)) : window.PRODUCTS.filter((product) => product.category === category);
   productGrid.innerHTML = ""; products.forEach((product) => productGrid.appendChild(createProductCard(product)));
   if (emptyCategory) emptyCategory.hidden = products.length > 0;
   const copy = CATEGORY_COPY[category] || CATEGORY_COPY.all; if (shopHeading) shopHeading.textContent = copy.heading;
