@@ -7,6 +7,9 @@ const emptyCategory = document.getElementById("emptyCategory");
 const CORAL_REEF_CRITTERS = { id: "coral-reef-critters", name: "Coral Reef Critters DIY Paint Set", price: 12.99, image: "assets/coral-reef-critters.png", alt: "Coral Reef Critters ceramic DIY paint set with dolphin, octopus, stingray, turtle, paints and brush", description: "Create your own colorful ocean friends! This DIY ceramic set includes the four sea-creature pieces shown, six paint colors, one paint brush, and free U.S. shipping.", category: "cora-diy", badge: "Cora's DIY", status: "available" };
 if (Array.isArray(window.PRODUCTS) && !window.PRODUCTS.some((product) => product.id === CORAL_REEF_CRITTERS.id)) window.PRODUCTS.push(CORAL_REEF_CRITTERS);
 
+const FALL_DIY_COMING_SOON = { id: "fall-diy-coming-soon", name: "Fall DIY Collection", price: null, image: "assets/file_000000006ef881fdb50b3d5e16e6c35d.png", alt: "Fall DIY ceramic painting collection from Ardente Family Treasures", description: "Cozy fall DIY projects are coming soon! Paint and create seasonal favorites for autumn and Thanksgiving.", category: "fall-diy", badge: "Fall DIY", status: "coming-soon" };
+if (Array.isArray(window.PRODUCTS) && !window.PRODUCTS.some((product) => product.id === FALL_DIY_COMING_SOON.id)) window.PRODUCTS.push(FALL_DIY_COMING_SOON);
+
 const CATEGORY_COPY = {
   all: { heading: "Featured Products", description: "Browse our books and family treasures, or choose a category to explore more." },
   books: { heading: "Books", description: "Stories and signed books from Ardente Family Treasures." },
@@ -16,6 +19,7 @@ const CATEGORY_COPY = {
   "handmade-gifts": { heading: "💝 Handmade Gifts", description: "One-of-a-kind handcrafted and hand-painted treasures made with care." },
   crafts: { heading: "DIY & Crafts", description: "Creative projects and paint-your-own treasures for family fun." },
   "seasonal-halloween": { heading: "🎃 Spooktacular Halloween Gifts", description: "Handmade and seasonal Halloween treasures ready to bring a little spooky fun home." },
+  "fall-diy": { heading: "🍁 Fall DIY", description: "Cozy autumn and Thanksgiving crafts to paint, create, and make your own." },
   "halloween-diy": { heading: "🎃 Halloween DIY", description: "Spooky, cute, and creative Halloween projects to make your own." }
 };
 let activeCategory = "all";
@@ -28,8 +32,8 @@ function createProductCard(product) {
 }
 function displayProducts(category = activeCategory) {
   if (!productGrid || !Array.isArray(window.PRODUCTS)) return; activeCategory = category;
-  const products = category === "all" ? window.PRODUCTS.filter((product) => !["halloween-diy", "seasonal-halloween", "cora-diy"].includes(product.category)) : window.PRODUCTS.filter((product) => product.category === category);
-  productGrid.innerHTML = ""; products.forEach((product) => productGrid.appendChild(createProductCard(product)));
+  const products = category === "all" ? window.PRODUCTS.filter((product) => !["halloween-diy", "seasonal-halloween", "cora-diy", "fall-diy"].includes(product.category)) : window.PRODUCTS.filter((product) => product.category === category);
+  productGrid.innerHTML = ""; products.forEach((product) => productGrid.appendChild(createProductCard(product));
   if (emptyCategory) emptyCategory.hidden = products.length > 0;
   const copy = CATEGORY_COPY[category] || CATEGORY_COPY.all; if (shopHeading) shopHeading.textContent = copy.heading;
   if (shopDescription) shopDescription.innerHTML = category === "halloween-diy" ? `<strong>🚚 FREE SHIPPING</strong><br>${copy.description}` : copy.description;
