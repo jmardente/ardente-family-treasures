@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Explore DIY paint kits from Ardente Family Treasures with painting inspiration, kit details, add-ons and pricing." />
+  <title>DIY Paint Kit | Ardente Family Treasures</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="store-v2.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Ardente Family Treasures home"><span class="brand-title">Ardente Family Treasures</span><span class="brand-subtitle">Books • Gifts • Keepsakes</span></a>
+    <nav class="site-nav open" aria-label="Product navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#shop">Back to Shop</a>
+      <button class="cart-button" id="openCart" type="button">🛒 Cart <span id="cartCount">0</span></button>
+    </nav>
+  </header>
+
+  <main class="diy-detail-page" id="diyProductPage">
+    <p class="diy-breadcrumbs"><a href="index.html">Home</a> / <a href="index.html#shop">DIY Paint Kits</a> / <span id="crumbName">Project</span></p>
+    <div class="diy-detail-grid">
+      <div><img id="diyMainImage" class="diy-main-image" alt="DIY paint kit" /></div>
+      <section class="diy-info-card">
+        <span class="badge" id="diyBadge">DIY Paint Kit</span>
+        <h1 id="diyName">DIY Paint Kit</h1>
+        <p id="diyDescription"></p>
+        <h2>What’s Included</h2>
+        <ul class="diy-includes">
+          <li>The unfinished ceramic piece or set shown</li>
+          <li>Six paint colors</li>
+          <li>One paint brush</li>
+          <li>Painting inspiration to help you get started</li>
+        </ul>
+        <p class="diy-price" id="diyPrice"></p>
+        <div id="diyMainAction"></div>
+        <p class="secure-note">Secure checkout handled by Stripe.</p>
+      </section>
+    </div>
+
+    <section class="diy-section-card">
+      <h2>Painting Inspiration</h2>
+      <p id="inspirationCopy">Need inspiration? Here’s one way you could paint it — then make it completely your own.</p>
+      <div id="inspirationImageWrap" hidden><img id="inspirationImage" class="diy-main-image" alt="Painting inspiration guide" /></div>
+      <p id="inspirationPlaceholder">A step-by-step Ardente painting guide will appear here as each kit is rebuilt.</p>
+    </section>
+
+    <section class="diy-section-card">
+      <h2>Optional Add-Ons</h2>
+      <div class="diy-addons">
+        <article class="diy-addon"><h3>Glitter Marker Set</h3><p>Add sparkle and extra detail to your project.</p><p><strong>$10.99</strong></p><button class="button gold" type="button" data-add-to-cart="glitter-marker-set">Add Markers</button></article>
+        <article class="diy-addon"><h3>More Creative Extras</h3><p>Extra paints, brushes and seasonal add-ons can be added here as we expand the collection.</p><a class="button purple" href="index.html#shop">See DIY Extras</a></article>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-panel" id="cartPanel" aria-hidden="true"><div class="cart-header"><h2>Your Cart</h2><button id="closeCart" type="button" aria-label="Close cart">×</button></div><div id="cartItems" class="cart-items"><p class="empty-cart">Your cart is empty.</p></div><div class="cart-footer"><div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div><button class="button purple full-width" id="checkoutButton" type="button">Checkout with Stripe</button><p class="checkout-message" id="checkoutMessage" role="alert"></p></div></aside><div class="cart-overlay" id="cartOverlay"></div>
+
+  <footer class="site-footer"><p>© 2026 Ardente Family Treasures. All rights reserved.</p></footer>
+  <script src="products.js"></script>
+  <script src="kids-gifts-products.js"></script>
+  <script src="diy-product.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>
