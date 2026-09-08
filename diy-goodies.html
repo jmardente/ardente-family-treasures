@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Shop paint markers, glitter markers, brushes, paints and creative extras from Ardente Family Treasures DIY Goodies." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://ardentefamilytreasures.com/diy-goodies.html" />
+  <title>DIY Goodies | Ardente Family Treasures</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="store-v2.css" />
+  <style>
+    .goodies-page{max-width:1100px;margin:auto;padding:48px 20px 80px}.goodies-hero{text-align:center;max-width:760px;margin:0 auto 36px}.goodies-hero h1{font-size:clamp(2.3rem,5vw,4rem);margin:.2em 0}.goodies-hero p{font-size:1.08rem;line-height:1.7}.goodies-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:26px;align-items:start}.goodie-card{background:#fff;border:2px solid rgba(62,42,78,.14);border-radius:24px;overflow:hidden;box-shadow:0 10px 28px rgba(55,38,67,.08)}.goodie-card img{width:100%;display:block;aspect-ratio:1/1;object-fit:cover}.goodie-info{padding:24px}.goodie-info h2{margin:8px 0 10px}.goodie-info p{line-height:1.6}.goodie-price{font-size:1.7rem;font-weight:700;margin:12px 0 4px}.shipping-note{display:block;margin-bottom:18px}.back-link{display:inline-block;margin-bottom:26px}.badge{display:inline-block}.cart-button{cursor:pointer}
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-title">Ardente Family Treasures</span><span class="brand-subtitle">Books • DIY • Family Treasures</span></a>
+  <nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#shop">Books</a><a href="diy.html">DIY Paint Kits</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a><button class="cart-button" id="openCart" type="button">🛒 Cart <span id="cartCount">0</span></button></nav>
+</header>
+<main class="goodies-page">
+  <a class="back-link" href="diy.html">← Back to DIY Paint Kits</a>
+  <section class="goodies-hero"><p class="eyebrow">Creative Extras</p><h1>DIY Goodies</h1><p>Markers, paints, brushes and fun extras to make every Ardente DIY project your own.</p></section>
+  <section class="goodies-grid" aria-label="DIY Goodies products">
+    <article class="goodie-card">
+      <img src="file_0000000044a081fdaa10f75d4a3b087b.png" alt="Glitter dual tip markers, 12 pack with 24 colors" />
+      <div class="goodie-info">
+        <span class="badge">DIY Goodies</span>
+        <h2>Glitter Dual Tip Markers — 12 Pack / 24 Colors</h2>
+        <p>Add sparkle to rocks, wood, crafts, cards and DIY projects with 12 dual-tip glitter markers in 24 vibrant colors.</p>
+        <p class="goodie-price">$9.99</p>
+        <small class="shipping-note">Plus shipping • Item weight: 2 oz</small>
+        <button class="button gold" type="button" data-add-to-cart="glitter-dual-tip-markers-12-pack">Add to Cart</button>
+        <small class="secure-note">Secure checkout handled by Stripe.</small>
+      </div>
+    </article>
+  </section>
+</main>
+<aside class="cart-panel" id="cartPanel" aria-hidden="true"><div class="cart-header"><h2>Your Cart</h2><button id="closeCart" type="button" aria-label="Close cart">×</button></div><div id="cartItems" class="cart-items"><p class="empty-cart">Your cart is empty.</p></div><div class="cart-footer"><div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div><button class="button purple full-width" id="checkoutButton" type="button">Checkout with Stripe</button><p class="checkout-message" id="checkoutMessage" role="alert"></p></div></aside><div class="cart-overlay" id="cartOverlay"></div>
+<footer class="site-footer"><p>© 2026 Ardente Family Treasures. All rights reserved.</p></footer>
+<script src="products.js"></script><script src="cart.js"></script>
+</body>
+</html>
