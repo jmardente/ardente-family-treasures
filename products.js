@@ -1,114 +1,45 @@
 const PRODUCTS = [
   {
-    id: "glitter-marker-set",
-    name: "Glitter Marker Set — 12 Dual-Tip Markers",
-    price: 10.99,
-    image: "assets/file_00000000880481fbbbb6d785da4d54b2.png",
-    alt: "12 dual-tip glitter markers with 24 colors in reusable storage case",
-    description: "Add sparkle, color, and creativity to your next project! This fun set includes 12 dual-tip glitter markers with 24 colors and a reusable storage case. Perfect for DIY crafts, ceramic painting, wood projects, coloring, and decorating. Free U.S. shipping included.",
-    category: "diy-extras",
-    badge: "✨ DIY Extra Goodies",
-    status: "available"
-  },
-  {
-    id: "diy-uv-glow-pens",
-    name: "UV Glow Pens — 6 Piece Dual-Ended Set",
-    price: 12.99,
-    image: "assets/file_00000000378081fb907280b5792a42b3.png",
-    alt: "Six-piece dual-ended UV glow marker set with 12 colors",
-    description: "Add a little extra magic to your DIY creations! This 6-piece UV glow pen set has double-ended markers for 12 colorful options and glows under UV light. A fun extra for DIY kits, crafts, and creative projects. Free U.S. shipping included.",
-    category: "diy-extras",
-    badge: "✨ DIY Extra Goodies",
-    status: "available"
-  },
-  {
-    id: "handpainted-conch-shell",
-    name: "Handcrafted & Hand-Painted Conch Shell Keepsake",
-    price: 12.99,
-    image: "assets/handpainted-conch-shell.png",
-    alt: "Handcrafted and hand-painted purple conch shell keepsake by Jamie",
-    description: "A beautiful handcrafted and hand-painted shell-shaped keepsake, perfect for jewelry, small treasures, beach décor, or gifting. Handmade and painted by Jamie. Free U.S. shipping included.",
-    category: "handmade-gifts", badge: "Handmade by Jamie", status: "available"
-  },
-  {
-    id: "handpainted-starfish-jewelry-holder",
-    name: "Handcrafted & Hand-Painted Starfish Jewelry Holder",
-    price: 12.99,
-    image: "assets/handcraft-painted-starfish-jewelry-holder.png",
-    alt: "Handcrafted and hand-painted turquoise starfish jewelry holder by Jamie",
-    description: "A one-of-a-kind handcrafted and hand-painted starfish dish, perfect for jewelry, keys, trinkets, or seaside décor. Each piece is individually made with care. Free U.S. shipping included.",
-    category: "handmade-gifts", badge: "Handmade by Jamie", status: "available"
-  },
-  {
     id: "cora-coral-reef",
     name: "Cora and the Coral Reef",
     price: 20.0,
     image: "assets/cora-coral-reef-book.png",
     alt: "Cora and the Coral Reef signed children's book",
     description: "A heartwarming ocean adventure about courage, friendship, teamwork, and believing in yourself.",
-    category: "books", badge: "Signed Copy", status: "available", stripePriceEnv: "STRIPE_PRICE_CORA_BOOK"
+    category: "books",
+    badge: "Signed Copy",
+    status: "available",
+    stripePriceEnv: "STRIPE_PRICE_CORA_BOOK"
   },
   {
-    id: "cora-coloring-book", name: "Cora's Ocean Adventures Coloring Book", price: 7.99,
-    image: "assets/cora-ocean-adventures-coloring-book.png", alt: "Cora's Ocean Adventures Meet the Ardente Ocean Family coloring book",
+    id: "cora-coloring-book",
+    name: "Cora's Ocean Adventures Coloring Book",
+    price: 7.99,
+    image: "assets/cora-ocean-adventures-coloring-book.png",
+    alt: "Cora's Ocean Adventures Meet the Ardente Ocean Family coloring book",
     description: "Meet Cora and the entire Ardente ocean family! Dive beneath the waves and get to know Seymour, Octavia, Pinch, Sophie, Quinn, Jackie, and many more lovable friends. Every page is filled with fun characters, ocean adventures, and creative coloring that brings the magical world of Cora's Ocean Adventures to life.",
-    category: "books", badge: "Meet the Family", status: "available", stripePriceEnv: "STRIPE_PRICE_CORA_COLORING_BOOK"
+    category: "books",
+    badge: "Meet the Family",
+    status: "available",
+    stripePriceEnv: "STRIPE_PRICE_CORA_COLORING_BOOK"
   },
   {
-    id: "cora-magical-necklace", name: "Cora and the Magical Necklace", price: null,
-    image: "assets/Cora and the Magical Necklace Book Cover.png", alt: "Cora and the Magical Necklace children's book cover by JM Ardente",
+    id: "cora-magical-necklace",
+    name: "Cora and the Magical Necklace",
+    price: null,
+    image: "assets/Cora and the Magical Necklace Book Cover.png",
+    alt: "Cora and the Magical Necklace children's book cover by JM Ardente",
     description: "Where the adventure began. Before Cora explored the coral reef, she discovered a mysterious pink seashell necklace that would change everything. Follow Cora as she uncovers its magic, meets new ocean friends, and begins the adventure that started it all. Sometimes the smallest treasures lead to the greatest adventures...",
-    category: "books", badge: "Coming Soon", status: "coming-soon"
-  },
-  {
-    id: "coral-reef-diy-paint-set", name: "Coral Reef DIY Paint Set", price: 19.99,
-    image: "assets/coral-reef-set.png", alt: "Coral Reef DIY ceramic paint set with six paints and brush",
-    description: "Create your own colorful coral reef! This ocean-inspired DIY ceramic paint set includes the unfinished ceramic pieces shown, six paint colors, and one brush. Free U.S. shipping included. Add the 12-piece glitter marker set for $6.99.",
-    category: "cora-diy", badge: "Cora's DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_CORAL_REEF_SET"
-  },
-  {
-    id: "large-shell-craft-set", name: "Large Shell Craft Set", price: 24.99,
-    image: "assets/large-shell-set.png", alt: "Large Shell Craft Set with 12 unfinished ceramic shell pieces, six paints, brush, and optional glitter marker upgrade",
-    description: "Create your own ocean treasures with 12 unfinished ceramic shell pieces, including two functional holders, plus six paints and one brush. Free U.S. shipping included. Upgrade with the 12-piece glitter marker set for $6.99.",
-    category: "cora-diy", badge: "Cora's DIY", status: "available"
-  },
-  {
-    id: "shell-collection-diy-set", name: "Ocean Friends Shell Collection DIY Paint Set", price: 9.99,
-    image: "assets/shell-collection.png", alt: "Ocean Friends Shell Collection unfinished ceramic sea-life pieces with six paints, brush, and optional glitter marker upgrade",
-    description: "Create your own colorful ocean friends! This DIY ceramic paint set includes the unfinished sea-life pieces shown, six paint colors, and one brush. Free U.S. shipping included. Upgrade with the 12-piece glitter marker set for $6.99.",
-    category: "cora-diy", badge: "Cora's DIY", status: "available"
-  },
-  {
-    id: "conch-shell-jewelry-holder", name: "Conch Shell Jewelry Holder", price: 14.99,
-    image: "assets/conch-shell.png", alt: "Unfinished ceramic conch shell jewelry holder with six paints and brush",
-    description: "Paint and personalize your own ceramic conch shell jewelry holder, perfect for jewelry, treasures, and keepsakes. Includes six paint colors and one brush, with free U.S. shipping. Upgrade with the 12-piece glitter marker set for $6.99.",
-    category: "cora-diy", badge: "Cora's DIY", status: "available"
-  },
-  {
-    id: "jackies-fun-fact-set", name: "Jackie's Fun Fact Set", price: 12.99,
-    image: "assets/jackies-fun-fact-set.png", alt: "Jackie's Fun Fact Set with unfinished ocean ceramic pieces, six paints, brush, and optional glitter markers",
-    description: "Paint it, learn it, love it! Jackie's Fun Fact Set combines ocean-themed ceramic painting with fun facts about amazing ocean creatures. Includes the unfinished ceramic pieces shown, six paint colors, one brush, and free U.S. shipping. Upgrade with the 12-piece glitter marker set for $6.99.",
-    category: "cora-diy", badge: "Cora's DIY", status: "available"
-  },
-  {
-    id: "mini-haunted-house-paint-set", name: "Mini Haunted House Halloween Paint Set", price: 29.99, image: "assets/mini-haunted-house-halloween-paint-set.png", alt: "Mini haunted house Halloween ceramic paint set with spooky figures", description: "Create your own spooky Halloween display! This DIY ceramic paint set includes the mini Halloween pieces shown, six paint colors, and one paint brush. A fun seasonal craft for families and Halloween decorating. Free shipping included.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_HAUNTED_HOUSE_SET"
-  },
-  { id: "3d-bat", name: "3D Bat Halloween DIY", price: 19.99, image: "assets/3D-bat.png", alt: "3D bat Halloween DIY craft", description: "Create your own spooky 3D bat! A fun Halloween DIY craft from Ardente Family Treasures.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_3D_BAT" },
-  { id: "boo-halloween-diy", name: "BOO Halloween DIY", price: 17.99, image: "assets/boo.png", alt: "BOO Halloween DIY craft", description: "Create your own BOO-themed Halloween decoration! A fun seasonal DIY craft from Ardente Family Treasures.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_BOO" },
-  { id: "large-haunted-house-set", name: "Large Haunted House Halloween Paint Set", price: 39.99, image: "assets/large-haunted- house.png", alt: "Large haunted house Halloween ceramic paint set with spooky figures", description: "Create a full spooky Halloween scene! This large DIY ceramic paint set includes the Halloween pieces shown, six paint colors, and one paint brush. Free shipping included.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_LARGE_HAUNTED_HOUSE_SET" },
-  { id: "zombie-hand-rose", name: "Zombie Hand & Rose Ceramic Paint Kit", price: 19.99, image: "assets/zombie-hand-rose.png", alt: "Zombie hand holding a rose Halloween ceramic paint kit", description: "Paint your own creepy-cute zombie hand holding a rose! This Halloween DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_ZOMBIE_HAND_ROSE" },
-  { id: "skull-in-claws", name: "Skull in Claws Ceramic Paint Kit", price: 19.99, image: "assets/skull-in-claws.png", alt: "Skull in claws Halloween ceramic paint kit", description: "Paint your own spooky skull-in-claws Halloween decoration! This DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_SKULL_IN_CLAWS" },
-  { id: "spooky-tree", name: "Spooky Tree Ceramic Paint Kit", price: 15.99, image: "assets/spooky-tree.png", alt: "Spooky tree Halloween ceramic paint kit", description: "Paint your own spooky Halloween tree! This DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_SPOOKY_TREE" },
-  { id: "halloween-pumpkin-truck", name: "Halloween Pumpkin Truck Ceramic Paint Kit", price: 24.99, image: "assets/halloween truck.png", alt: "Halloween pumpkin truck ceramic paint kit with ghosts and pumpkins", description: "Paint your own Halloween pumpkin truck packed with spooky seasonal details! This DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_HALLOWEEN_TRUCK" },
-  { id: "ghost-pumpkin-cauldron", name: "Ghost & Pumpkin Cauldron Ceramic Paint Kit", price: 19.99, image: "assets/ghost-with-cauldron.png", alt: "Ghost and pumpkin cauldron Halloween ceramic paint kit", description: "Paint your own ghost and pumpkin cauldron Halloween decoration! This DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_GHOST_CAULDRON" },
-  { id: "scary-clown-head", name: "Scary Clown Head Ceramic Paint Kit", price: 19.99, image: "assets/scary-clown-head.png", alt: "Scary clown head Halloween ceramic paint kit", description: "Paint your own creepy scary clown head Halloween decoration! This DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_SCARY_CLOWN_HEAD" },
-  { id: "ghost-boo", name: "Ghost & BOO Ceramic Paint Set", price: 24.99, image: "assets/ghost-boo.png", alt: "Ghost and BOO two-piece Halloween ceramic paint set", description: "Paint your own ghost and BOO Halloween decorations! This two-piece DIY ceramic set includes both ceramic pieces, six paint colors, and one paint brush. Free shipping included.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_GHOST_BOO" },
-  { id: "gnome-boo", name: "Gnome & BOO Ceramic Paint Set", price: 24.99, image: "assets/gnome-boo.png", alt: "Halloween gnome and BOO two-piece ceramic paint set", description: "Paint your own Halloween gnome and BOO decorations! This two-piece DIY ceramic set includes both ceramic pieces, six paint colors, and one paint brush. Free shipping included.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_GNOME_BOO" },
-  { id: "frankenstein-planter", name: "Frankenstein Planter Ceramic Paint Kit", price: 24.99, image: "assets/frankenstein-planter.png", alt: "Frankenstein-style Halloween ceramic planter paint kit", description: "Paint your own spooky Frankenstein-style ceramic planter! This DIY Halloween kit includes the ceramic planter, six paint colors, and one paint brush. Free shipping included.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_FRANKENSTEIN_PLANTER" },
-  { id: "heart-brain", name: "Heart & Brain Ceramic Paint Set", price: 15.99, image: "assets/heart-brain.png", alt: "Anatomical heart and brain two-piece Halloween ceramic paint set", description: "Paint your own anatomical heart and brain Halloween decorations! This two-piece DIY ceramic set includes both ceramic pieces, six paint colors, and one paint brush. Free shipping included.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_HEART_BRAIN" },
-  { id: "cat-on-pumpkin", name: "Cat on Pumpkin Ceramic Paint Kit", price: 12.99, image: "assets/cat-on-pumkin.png", alt: "Flat cat sitting on a pumpkin Halloween ceramic paint kit", description: "Paint your own flat cat-on-pumpkin Halloween decoration! This DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_CAT_ON_PUMPKIN" },
-  { id: "spider-web-cauldron-lid", name: "Spider Web Cauldron with Lid Ceramic Paint Kit", price: 19.99, image: "assets/spider-web-cauldron-lid.png", alt: "Spider web cauldron with removable decorated lid Halloween ceramic paint kit", description: "Paint your own spooky 3D spider-web cauldron with removable decorated lid! This Halloween DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_SPIDER_WEB_CAULDRON_LID" },
-  { id: "spooky-tree-with-ghosts", name: "Spooky Tree with Ghosts Ceramic Paint Kit", price: 24.99, image: "assets/spooky-tree-with ghost.png", alt: "Spooky tree filled with friendly ghosts Halloween ceramic paint kit", description: "Paint your own spooky tree filled with friendly ghosts! This Halloween DIY ceramic kit includes the ceramic piece, six paint colors, and one paint brush. Free shipping included.", category: "halloween-diy", badge: "Halloween DIY", status: "available", stripePriceEnv: "STRIPE_PRICE_SPOOKY_TREE_WITH_GHOSTS" }
+    category: "books",
+    badge: "Coming Soon",
+    status: "coming-soon"
+  }
 ];
-if (typeof window !== "undefined") window.PRODUCTS = PRODUCTS;
-if (typeof module !== "undefined" && module.exports) module.exports = PRODUCTS;
+
+if (typeof window !== "undefined") {
+  window.PRODUCTS = PRODUCTS;
+}
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = PRODUCTS;
+}
