@@ -6,7 +6,7 @@
       '@id': `${siteUrl}#website`,
       url: siteUrl,
       name: 'Ardente Family Treasures',
-      description: "Children's books, ocean-inspired DIY craft kits, handmade gifts, keepsakes and family treasures.",
+      description: "Children's books, coloring adventures, DIY paint kits, painting goodies and meaningful family treasures.",
       inLanguage: 'en-US'
     },
     {
@@ -14,7 +14,7 @@
       '@id': `${siteUrl}#store`,
       name: 'Ardente Family Treasures',
       url: siteUrl,
-      description: "Shop signed children's books, Cora's Ocean Adventures gifts, DIY craft kits, handmade keepsakes and seasonal family treasures.",
+      description: "Shop Cora's Ocean Adventures books and coloring books, and explore creative DIY paint kits and painting goodies.",
       image: `${siteUrl}assets/cora-coral-reef-book.png`
     }
   ];
