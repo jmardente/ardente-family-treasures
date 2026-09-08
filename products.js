@@ -44,7 +44,7 @@ const PRODUCTS = [
     category: "diy-goodies",
     badge: "DIY Goodies",
     status: "available",
-    weightOz: 2
+    weightOz: 6.5
   }
 ];
 
