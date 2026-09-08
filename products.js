@@ -38,7 +38,7 @@ const PRODUCTS = [
     id: "glitter-dual-tip-markers-12-pack",
     name: "Glitter Dual Tip Markers — 12 Pack / 24 Colors",
     price: 9.99,
-    image: "file_0000000044a081fdaa10f75d4a3b087b.png",
+    image: "assets/file_000000008f3081fda0f0260ad995a98d.png",
     alt: "Glitter dual tip markers, 12 pack with 24 colors",
     description: "Add sparkle to rocks, wood, crafts, cards and DIY projects with 12 dual-tip glitter markers in 24 vibrant colors.",
     category: "diy-goodies",
