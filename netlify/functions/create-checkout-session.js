@@ -1,15 +1,6 @@
 const Stripe = require("stripe");
 const products = require("../../products.js");
 
-const EXTRA_PRODUCTS = [
-  {
-    id: "coral-reef-critters",
-    name: "Coral Reef Critters DIY Paint Set",
-    price: 12.99,
-    status: "available"
-  }
-];
-
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: JSON.stringify({ error: "Method not allowed." }) };
@@ -25,7 +16,7 @@ exports.handler = async (event) => {
       throw new Error("Your cart is empty.");
     }
 
-    const productMap = new Map([...products, ...EXTRA_PRODUCTS].map((product) => [product.id, product]));
+    const productMap = new Map(products.map((product) => [product.id, product]));
     const line_items = items.map(({ id, quantity }) => {
       const product = productMap.get(id);
       if (!product || product.status !== "available") {
@@ -36,10 +27,7 @@ exports.handler = async (event) => {
       const configuredPrice = product.stripePriceEnv ? process.env[product.stripePriceEnv] : null;
 
       if (configuredPrice) {
-        return {
-          price: configuredPrice,
-          quantity: normalizedQuantity
-        };
+        return { price: configuredPrice, quantity: normalizedQuantity };
       }
 
       if (Number.isFinite(product.price)) {
@@ -58,7 +46,9 @@ exports.handler = async (event) => {
 
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
     const siteUrl = process.env.URL || "http://localhost:8888";
-    const session = await stripe.checkout.sessions.create({
+    const shippingRateId = process.env.STRIPE_SHIPPING_RATE_STANDARD || null;
+
+    const sessionConfig = {
       mode: "payment",
       line_items,
       success_url: `${siteUrl}/?checkout=success`,
@@ -66,8 +56,13 @@ exports.handler = async (event) => {
       billing_address_collection: "auto",
       shipping_address_collection: { allowed_countries: ["US"] },
       allow_promotion_codes: true
-    });
+    };
 
+    if (shippingRateId) {
+      sessionConfig.shipping_options = [{ shipping_rate: shippingRateId }];
+    }
+
+    const session = await stripe.checkout.sessions.create(sessionConfig);
     return { statusCode: 200, body: JSON.stringify({ url: session.url }) };
   } catch (error) {
     return { statusCode: 400, body: JSON.stringify({ error: error.message }) };
