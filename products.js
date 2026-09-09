@@ -47,6 +47,19 @@ const PRODUCTS = [
     weightOz: 6.5
   },
   {
+    id: "bigfoot-adventure-set",
+    name: "DIY Bigfoot Adventure — Set of 4",
+    price: 14.99,
+    image: "assets/file_00000000fe7081fdb9173b8455fa6180.png",
+    alt: "DIY Bigfoot Adventure paint-your-own set of four with paints and brush",
+    description: "A set of four Bigfoot adventure paint-your-own pieces with four unique outdoor designs. Paints and brush are included.",
+    detailDescription: "Create your own Bigfoot adventure with four different paint-your-own designs featuring forests, mountains, UFOs and outdoor scenes. The $14.99 set includes paints and a brush. Product weight is 11 oz before packaging; shipping is added separately.",
+    category: "paint-your-own",
+    badge: "Paint Your Own",
+    status: "available",
+    weightOz: 11
+  },
+  {
     id: "maple-leaf-diy",
     name: "DIY Maple Leaf Dish",
     price: 9.99,
