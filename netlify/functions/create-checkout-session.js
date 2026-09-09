@@ -24,7 +24,12 @@ exports.handler = async (event) => {
       }
 
       const normalizedQuantity = Math.max(1, Math.min(20, Number(quantity) || 1));
+      const directPrice = product.stripePriceId || null;
       const configuredPrice = product.stripePriceEnv ? process.env[product.stripePriceEnv] : null;
+
+      if (directPrice) {
+        return { price: directPrice, quantity: normalizedQuantity };
+      }
 
       if (configuredPrice) {
         return { price: configuredPrice, quantity: normalizedQuantity };
