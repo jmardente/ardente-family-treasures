@@ -54,10 +54,22 @@ const PRODUCTS = [
     alt: "DIY Bigfoot Adventure paint-your-own set of four with paints and brush",
     description: "A set of four Bigfoot adventure paint-your-own pieces with four unique outdoor designs. Paints and brush are included.",
     detailDescription: "Create your own Bigfoot adventure with four different paint-your-own designs featuring forests, mountains, UFOs and outdoor scenes. The $14.99 set includes paints and a brush. Product weight is 11 oz before packaging; shipping is added separately.",
-    category: "paint-your-own",
-    badge: "Paint Your Own",
+    category: "everyday-diy",
+    badge: "Everyday DIY",
     status: "available",
     weightOz: 11
+  },
+  {
+    id: "diy-cauldron",
+    name: "DIY Paint-Your-Own Cauldron",
+    price: 12.99,
+    image: "assets/Cauldron.png",
+    alt: "DIY paint-your-own cauldron kit with paints and brush",
+    description: "A fun paint-your-own cauldron project for any time of year. Includes paints and a brush.",
+    category: "everyday-diy",
+    badge: "Everyday DIY",
+    status: "available",
+    weightOz: 8
   },
   {
     id: "maple-leaf-diy",
