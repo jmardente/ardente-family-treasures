@@ -198,6 +198,19 @@ const PRODUCTS = [
     weightOz: 19
   },
   {
+    id: "halloween-gnome-tree-set",
+    name: "Halloween Gnome & Tree Set DIY Paint Kit",
+    price: 18.99,
+    image: "assets/halloween-gnome-tree-set.jpg",
+    alt: "Halloween gnome and spooky tree DIY paint kit with paints and brush",
+    description: "Paint your own spooky Halloween gnome and haunted tree set. Includes paints and a brush.",
+    detailDescription: "A spooky pair for your Halloween decor! The $18.99 set includes a 3 oz gnome, a 6.5 oz tree, paints and a brush. Total set weight is approximately 10 oz before packaging; shipping is added separately.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    weightOz: 10
+  },
+  {
     id: "witchy-cat-container-set",
     name: "Witchy Cat DIY Container Set",
     price: 14.99,
