@@ -135,6 +135,18 @@ const PRODUCTS = [
     weightOz: 5.5
   },
   {
+    id: "halloween-salt-pepper-set",
+    name: "Halloween Salt & Pepper DIY Paint Kit",
+    price: 17.99,
+    image: "assets/Salt-pepper.png",
+    alt: "Halloween salt and pepper DIY paint kit with paints and brush",
+    description: "Paint your own matching Halloween salt and pepper set. Includes paints and a brush.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    weightOz: 19
+  },
+  {
     id: "witchy-cat-container-set",
     name: "Witchy Cat DIY Container Set",
     price: 14.99,
