@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Shop Kids Corner at Ardente Family Treasures for toys, gifts, creative fun, books and special treasures for kids.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://ardentefamilytreasures.com/kids-corner.html">
+  <title>Kids Corner | Toys & Gifts for Kids | Ardente Family Treasures</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="store-v2.css">
+  <style>
+    .kids-page{max-width:1180px;margin:auto;padding:46px 20px 80px}
+    .kids-hero{position:relative;overflow:hidden;text-align:center;padding:54px 24px;border-radius:32px;background:linear-gradient(135deg,#fff4c7 0%,#e8fbff 50%,#f5eaff 100%);border:2px solid rgba(22,129,138,.12);box-shadow:0 14px 34px rgba(55,38,67,.08)}
+    .kids-hero:before,.kids-hero:after{position:absolute;font-size:5rem;opacity:.16;pointer-events:none}.kids-hero:before{content:"★";left:5%;top:10px}.kids-hero:after{content:"♥";right:6%;bottom:0}
+    .kids-hero h1{margin:.15em 0;color:#123f5a;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.6rem,6vw,5rem);line-height:1}
+    .kids-hero p{max-width:720px;margin:16px auto 0;color:#536f7c;font-size:1.12rem;line-height:1.7}
+    .kids-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:34px 0 52px}
+    .kids-card{display:flex;min-height:225px;padding:28px;border-radius:26px;text-decoration:none;flex-direction:column;justify-content:flex-end;background:#fff;border:2px solid rgba(62,42,78,.12);box-shadow:0 10px 28px rgba(55,38,67,.08);transition:transform .2s ease,box-shadow .2s ease}
+    .kids-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(55,38,67,.12)}
+    .kids-card span{font-size:2.4rem}.kids-card h2{margin:10px 0 6px;color:#123f5a}.kids-card p{margin:0;color:#5e7480;line-height:1.55}
+    .kids-card.toys{background:#fff7d8}.kids-card.gifts{background:#f8ecff}.kids-card.create{background:#e8faf7}.kids-card.books{background:#eaf4ff}
+    .coming-soon{text-align:center;padding:46px 24px;border-radius:28px;background:#fff;border:2px dashed rgba(22,129,138,.28)}
+    .coming-soon h2{margin:0 0 10px;color:#123f5a;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.8rem,4vw,2.8rem)}
+    .coming-soon p{max-width:680px;margin:0 auto 20px;color:#617783;line-height:1.7}
+    .kids-note{margin-top:28px;text-align:center;color:#6b7c85;font-size:.95rem}
+    @media(max-width:700px){.kids-grid{grid-template-columns:1fr}.kids-hero{padding:42px 18px}}
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-title">Ardente Family Treasures</span><span class="brand-subtitle">Books • DIY • Family Treasures</span></a>
+  <nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#shop">Books</a><a href="diy.html">Paint • Create • Craft</a><a href="kids-corner.html">Kids Corner</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a><button class="cart-button" id="openCart" type="button">🛒 Cart <span id="cartCount">0</span></button></nav>
+</header>
+<main class="kids-page">
+  <section class="kids-hero">
+    <p class="eyebrow">Just for Kids</p>
+    <h1>Kids Corner</h1>
+    <p>Little treasures. Big smiles. Find fun toys, creative gifts, storytime favorites and special surprises picked with kids in mind.</p>
+  </section>
+
+  <section class="kids-grid" aria-label="Kids Corner categories">
+    <a class="kids-card toys" href="#kids-products"><span>🧸</span><h2>Toys & Play</h2><p>Fun finds for pretend play, games, little surprises and everyday playtime.</p></a>
+    <a class="kids-card gifts" href="#kids-products"><span>🎁</span><h2>Gifts for Kids</h2><p>Birthday gifts, holiday surprises, rewards and special little treasures.</p></a>
+    <a class="kids-card create" href="diy.html"><span>🎨</span><h2>Creative Kids</h2><p>Hands-on paint projects, crafts and creative activities for kids and families.</p></a>
+    <a class="kids-card books" href="index.html#shop"><span>📚</span><h2>Books & Storytime</h2><p>Imaginative stories and coloring adventures made for curious young readers.</p></a>
+  </section>
+
+  <section class="coming-soon" id="kids-products">
+    <p class="eyebrow">New Treasures Coming In</p>
+    <h2>Kids Corner is ready for its first toys & gifts!</h2>
+    <p>This section is now set up for individual toy and gift listings. As new Kids Corner items are added, they can appear here with photos, prices and Add to Cart buttons.</p>
+    <a class="button purple" href="index.html">Keep Shopping AFT</a>
+  </section>
+  <p class="kids-note">Ardente Family Treasures • Family fun, creativity and treasures made to be remembered.</p>
+</main>
+<aside class="cart-panel" id="cartPanel" aria-hidden="true"><div class="cart-header"><h2>Your Cart</h2><button id="closeCart" type="button" aria-label="Close cart">×</button></div><div id="cartItems" class="cart-items"><p class="empty-cart">Your cart is empty.</p></div><div class="cart-footer"><div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div><button class="button purple full-width" id="checkoutButton" type="button">Checkout with Stripe</button><p class="checkout-message" id="checkoutMessage" role="alert"></p></div></aside><div class="cart-overlay" id="cartOverlay"></div>
+<footer class="site-footer"><p>© 2026 Ardente Family Treasures. All rights reserved.</p></footer>
+<script src="products.js"></script><script src="cart.js"></script>
+</body>
+</html>
