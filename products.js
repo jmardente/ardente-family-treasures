@@ -72,6 +72,45 @@ const PRODUCTS = [
     weightOz: 8
   },
   {
+    id: "diy-critter-snake",
+    name: "DIY Critters — Snake",
+    price: 7.99,
+    image: "assets/diy-critters-snake.webp",
+    alt: "DIY paint-your-own magnetic snake with paints and brush",
+    description: "Paint your own magnetic snake and make it completely yours. Includes paints and a brush — perfect for a fridge, locker or other magnetic surface.",
+    detailDescription: "A creative paint-your-own magnetic snake for all ages. The $7.99 kit includes paints and a brush. Approximate product weight is 6.5 oz before packaging; shipping is added separately.",
+    category: "everyday-diy",
+    badge: "DIY Critters",
+    status: "available",
+    weightOz: 6.5
+  },
+  {
+    id: "diy-critter-scorpion",
+    name: "DIY Critters — Scorpion",
+    price: 4.99,
+    image: "assets/diy-critters-scorpion.webp",
+    alt: "DIY paint-your-own magnetic scorpion with paints and brush",
+    description: "Paint your own magnetic scorpion and give it your own style. Includes paints and a brush — perfect for a fridge, locker or other magnetic surface.",
+    detailDescription: "A creative paint-your-own magnetic scorpion for all ages. The $4.99 kit includes paints and a brush. Approximate product weight is 2.5 oz before packaging; shipping is added separately.",
+    category: "everyday-diy",
+    badge: "DIY Critters",
+    status: "available",
+    weightOz: 2.5
+  },
+  {
+    id: "diy-critter-snake-scorpion-set",
+    name: "DIY Critters — Snake & Scorpion Set",
+    price: 9.99,
+    image: "assets/diy-critters-snake-scorpion-set.webp",
+    alt: "DIY paint-your-own magnetic snake and scorpion set with paints and brush",
+    description: "Get both DIY Critters together! Paint your own magnetic snake and scorpion. Includes paints and a brush.",
+    detailDescription: "The DIY Critters Snake & Scorpion Set includes both magnetic pieces, paints and a brush for $9.99. Total product weight is approximately 9 oz before packaging; shipping is added separately.",
+    category: "everyday-diy",
+    badge: "DIY Critters",
+    status: "available",
+    weightOz: 9
+  },
+  {
     id: "maple-leaf-diy",
     name: "DIY Maple Leaf Dish",
     price: 9.99,
