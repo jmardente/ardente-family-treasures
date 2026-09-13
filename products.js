@@ -123,6 +123,18 @@ const PRODUCTS = [
     stripePriceId: "price_1UDa2v0fa9ricc7XNt195Y5I"
   },
   {
+    id: "mummy-pumpkin-diy",
+    name: "Mummy Pumpkin DIY Paint Kit",
+    price: 9.99,
+    image: "assets/file_000000004ca48230bc423319ec06a9ff.png",
+    alt: "Mummy pumpkin Halloween DIY paint kit with paints and brush",
+    description: "A spooky-cute mummy pumpkin ready to paint and make your own. Includes paints and a brush.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    weightOz: 5.5
+  },
+  {
     id: "witchy-cat-container-set",
     name: "Witchy Cat DIY Container Set",
     price: 14.99,
