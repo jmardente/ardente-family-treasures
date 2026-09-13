@@ -157,24 +157,6 @@ const PRODUCTS = [
     category: "halloween-diy",
     status: "available",
     stripePriceId: "price_1UDa5x0fa9ricc7X0ppQHdW5"
-  },
-  {
-    id: "3d-bat-halloween",
-    name: "3D Bat Halloween DIY",
-    price: 12.99,
-    image: "assets/3D-bat.png",
-    category: "halloween-diy",
-    status: "available",
-    stripePriceId: "price_1U203D0fa9ricc7XDsT7DnVP"
-  },
-  {
-    id: "boo-halloween-diy",
-    name: "BOO Halloween DIY",
-    price: 12.99,
-    image: "assets/boo.png",
-    category: "halloween-diy",
-    status: "available",
-    stripePriceId: "price_1U204j0fa9ricc7XyKeoGelv"
   }
 ];
 
