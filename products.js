@@ -186,6 +186,19 @@ const PRODUCTS = [
     weightOz: 5.5
   },
   {
+    id: "halloween-potion-cauldron",
+    name: "Halloween Potion Cauldron DIY Paint Kit",
+    price: 9.99,
+    image: "assets/Halloween-potion-cauldron.webp",
+    alt: "Halloween potion cauldron DIY paint kit with acrylic paints and brush",
+    description: "Paint your own spooky potion cauldron. Includes one ready-to-paint cauldron, 6 acrylic paints, and a brush.",
+    detailDescription: "A fun Halloween paint-your-own potion cauldron kit for all ages. The $9.99 kit includes one ready-to-paint cauldron, 6 acrylic paints, and a paint brush. Product weight is approximately 10.5 oz before packaging; shipping is added separately.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    weightOz: 10.5
+  },
+  {
     id: "halloween-salt-pepper-set",
     name: "Halloween Salt & Pepper DIY Paint Kit",
     price: 17.99,
