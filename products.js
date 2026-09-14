@@ -66,8 +66,8 @@ const PRODUCTS = [
     image: "assets/Cauldron.png",
     alt: "DIY paint-your-own cauldron kit with paints and brush",
     description: "A fun paint-your-own cauldron project for any time of year. Includes paints and a brush.",
-    category: "everyday-diy",
-    badge: "Everyday DIY",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
     status: "available",
     weightOz: 8
   },
