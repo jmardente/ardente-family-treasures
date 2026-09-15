@@ -186,6 +186,19 @@ const PRODUCTS = [
     weightOz: 5.5
   },
   {
+    id: "scary-clown-diy",
+    name: "Scary Clown DIY Paint Kit",
+    price: 9.99,
+    image: "assets/file_0000000031bc8210a27be980174ee8e4.png",
+    alt: "Scary clown Halloween DIY paint kit before and after",
+    description: "Paint, create, customize, and make it yours. Includes 6 paints, a brush, and step-by-step painting instructions.",
+    detailDescription: "Create your own scary clown Halloween decoration. The $9.99 kit includes one ready-to-paint clown, 6 paints, a brush, and step-by-step painting instructions. Product weight is 23.5 oz before packaging; shipping is added separately.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available",
+    weightOz: 23.5
+  },
+  {
     id: "halloween-potion-cauldron",
     name: "Halloween Potion Cauldron DIY Paint Kit",
     price: 9.99,
