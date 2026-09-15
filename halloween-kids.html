@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Shop Halloween Kids Corner at Ardente Family Treasures for spooky-cute bags, gifts and seasonal goodies for kids.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://ardentefamilytreasures.com/halloween-kids.html">
+  <title>Halloween Kids Corner | Ardente Family Treasures</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="store-v2.css">
+  <style>
+    .halloween-kids-page{max-width:1180px;margin:auto;padding:42px 20px 80px}
+    .back-link{display:inline-block;margin:0 0 20px;color:#5f3a78;font-weight:700;text-decoration:none}
+    .back-link:hover{text-decoration:underline}
+    .hk-hero{position:relative;overflow:hidden;text-align:center;padding:58px 24px;border-radius:32px;background:linear-gradient(135deg,#fff3dd 0%,#f5e8ff 52%,#e9f7ff 100%);border:2px solid rgba(104,55,132,.16);box-shadow:0 14px 34px rgba(55,38,67,.1)}
+    .hk-hero:before,.hk-hero:after{position:absolute;pointer-events:none;opacity:.15;font-size:5rem}.hk-hero:before{content:"🎃";left:4%;top:12px}.hk-hero:after{content:"👻";right:5%;bottom:4px}
+    .hk-hero h1{margin:.15em 0;color:#4e2d63;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.6rem,6vw,5rem);line-height:1}
+    .hk-hero p{max-width:720px;margin:16px auto 0;color:#665574;font-size:1.12rem;line-height:1.7}
+    .season-badge{display:inline-block;margin-top:18px;padding:9px 16px;border-radius:999px;background:#5f3a78;color:#fff;font-weight:800;letter-spacing:.02em}
+    .hk-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:34px 0}
+    .hk-card{min-height:190px;padding:28px;border-radius:26px;background:#fff;border:2px solid rgba(95,58,120,.12);box-shadow:0 10px 28px rgba(55,38,67,.08)}
+    .hk-card span{font-size:2.4rem}.hk-card h2{margin:10px 0 6px;color:#4e2d63}.hk-card p{margin:0;color:#6f6477;line-height:1.6}
+    .hk-card.bags{background:#fff1f4}.hk-card.gifts{background:#f6edff}
+    .hk-coming{text-align:center;margin-top:28px;padding:44px 24px;border-radius:28px;background:#fff;border:2px dashed rgba(95,58,120,.28)}
+    .hk-coming h2{margin:0 0 10px;color:#4e2d63;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.8rem,4vw,2.8rem)}
+    .hk-coming p{max-width:690px;margin:0 auto 20px;color:#6f6477;line-height:1.7}
+    .hk-note{margin-top:26px;text-align:center;color:#786d80;font-size:.95rem}
+    @media(max-width:700px){.hk-grid{grid-template-columns:1fr}.hk-hero{padding:44px 18px}}
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-title">Ardente Family Treasures</span><span class="brand-subtitle">Books • DIY • Family Treasures</span></a>
+  <nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#shop">Books</a><a href="diy.html">Paint • Create • Craft</a><a href="kids-corner.html">Kids Corner</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a><button class="cart-button" id="openCart" type="button">🛒 Cart <span id="cartCount">0</span></button></nav>
+</header>
+<main class="halloween-kids-page">
+  <a class="back-link" href="kids-corner.html">← Back to Kids Corner</a>
+  <section class="hk-hero">
+    <p class="eyebrow">Seasonal Kids Corner</p>
+    <h1>Halloween Kids Corner</h1>
+    <p>Spooky-cute treasures made just for little ghosts and goblins — fun bags, seasonal gifts and Halloween surprises without the scary stuff.</p>
+    <span class="season-badge">🎃 Halloween Goodies</span>
+  </section>
+
+  <section class="hk-grid" aria-label="Halloween Kids Corner categories">
+    <article class="hk-card bags"><span>👻</span><h2>Bags & Accessories</h2><p>Adorable seasonal backpacks, purses and little carry-along treasures for Halloween fun.</p></article>
+    <article class="hk-card gifts"><span>🍬</span><h2>Little Halloween Gifts</h2><p>Spooky-cute surprises, small gifts and seasonal goodies picked with kids in mind.</p></article>
+  </section>
+
+  <section class="hk-coming" id="halloween-kids-products">
+    <p class="eyebrow">New Seasonal Treasures</p>
+    <h2>Halloween goodies are arriving!</h2>
+    <p>This seasonal Kids Corner is ready for Halloween product listings. New bags, gifts and kid-friendly spooky finds can be added here as they arrive.</p>
+    <a class="button purple" href="kids-corner.html">Explore Kids Corner</a>
+  </section>
+  <p class="hk-note">Ardente Family Treasures • Small treasures, big smiles, and a little Halloween magic.</p>
+</main>
+<aside class="cart-panel" id="cartPanel" aria-hidden="true"><div class="cart-header"><h2>Your Cart</h2><button id="closeCart" type="button" aria-label="Close cart">×</button></div><div id="cartItems" class="cart-items"><p class="empty-cart">Your cart is empty.</p></div><div class="cart-footer"><div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div><button class="button purple full-width" id="checkoutButton" type="button">Checkout with Stripe</button><p class="checkout-message" id="checkoutMessage" role="alert"></p></div></aside><div class="cart-overlay" id="cartOverlay"></div>
+<footer class="site-footer"><p>© 2026 Ardente Family Treasures. All rights reserved.</p></footer>
+<script src="products.js"></script><script src="cart.js"></script>
+</body>
+</html>
