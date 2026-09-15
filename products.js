@@ -60,6 +60,19 @@ const PRODUCTS = [
     weightOz: 11
   },
   {
+    id: "alligator-ceramic-diy",
+    name: "Alligator Ceramic DIY Paint Kit",
+    price: 12.99,
+    image: "assets/file_00000000a98481fba01208fd879994e9.png",
+    alt: "Alligator ceramic Everyday DIY paint kit before and after",
+    description: "Paint your own alligator ceramic and make it completely yours. Includes 6 paints and a brush.",
+    detailDescription: "A fun everyday paint-your-own alligator ceramic project for $12.99. The kit includes one ready-to-paint alligator ceramic, 6 paints, and a paint brush. Product weight is 8.5 oz before packaging; shipping is added separately.",
+    category: "everyday-diy",
+    badge: "Everyday DIY",
+    status: "available",
+    weightOz: 8.5
+  },
+  {
     id: "diy-cauldron",
     name: "DIY Paint-Your-Own Cauldron",
     price: 12.99,
@@ -153,7 +166,7 @@ const PRODUCTS = [
     image: "assets/Owl-rooster.png",
     category: "fall-diy",
     status: "available",
-    stripePriceId: "price_1UDa2m0fa9ricc7Xyhu2AkqX"
+    stripePriceId: "price_1UDa2m0fa9ricc7XZrl6WUhD"
   },
   {
     id: "farmhouse-rooster",
