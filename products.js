@@ -166,7 +166,7 @@ const PRODUCTS = [
     image: "assets/Owl-rooster.png",
     category: "fall-diy",
     status: "available",
-    stripePriceId: "price_1UDa2m0fa9ricc7XZrl6WUhD"
+    stripePriceId: "price_1UDa2m0fa9ricc7Xyhu2AkqX"
   },
   {
     id: "farmhouse-rooster",
