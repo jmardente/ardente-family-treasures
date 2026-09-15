@@ -212,6 +212,18 @@ const PRODUCTS = [
     weightOz: 10.5
   },
   {
+    id: "3d-haunted-house-diy",
+    name: "3D Haunted House DIY Paint Kit",
+    price: 9.99,
+    image: "assets/3D-haunted-house.png",
+    alt: "3D haunted house Halloween DIY paint kit before and after",
+    description: "Paint your own spooky 3D haunted house. Includes one ready-to-paint haunted house, 6 acrylic paints, and a paint brush.",
+    detailDescription: "Create your own Halloween haunted house for $9.99. The kit includes one ready-to-paint 3D haunted house, 6 acrylic paints, and a paint brush. Shipping is added separately.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available"
+  },
+  {
     id: "halloween-salt-pepper-set",
     name: "Halloween Salt & Pepper DIY Paint Kit",
     price: 17.99,
