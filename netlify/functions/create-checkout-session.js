@@ -1,5 +1,7 @@
 const Stripe = require("stripe");
 const products = require("../../products.js");
+const coraProducts = require("../../cora-products.js");
+const allProducts = [...products, ...coraProducts];
 
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
@@ -16,7 +18,7 @@ exports.handler = async (event) => {
       throw new Error("Your cart is empty.");
     }
 
-    const productMap = new Map(products.map((product) => [product.id, product]));
+    const productMap = new Map(allProducts.map((product) => [product.id, product]));
     const line_items = items.map(({ id, quantity }) => {
       const product = productMap.get(id);
       if (!product || product.status !== "available") {
