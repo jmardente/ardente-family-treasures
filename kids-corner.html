@@ -20,11 +20,14 @@
     .kids-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(55,38,67,.12)}
     .kids-card span{font-size:2.4rem}.kids-card h2{margin:10px 0 6px;color:#123f5a}.kids-card p{margin:0;color:#5e7480;line-height:1.55}
     .kids-card.toys{background:#fff7d8}.kids-card.gifts{background:#f8ecff}.kids-card.create{background:#e8faf7}.kids-card.books{background:#eaf4ff}
+    .kids-card.halloween{grid-column:1/-1;min-height:245px;background:linear-gradient(135deg,#fff0df 0%,#f5e7ff 55%,#edf7ff 100%);border-color:rgba(95,58,120,.2);position:relative;overflow:hidden}
+    .kids-card.halloween:after{content:"🎃 👻";position:absolute;right:28px;top:22px;font-size:3rem;opacity:.24}
+    .kids-card.halloween h2{color:#5f3a78;font-size:1.9rem}
     .coming-soon{text-align:center;padding:46px 24px;border-radius:28px;background:#fff;border:2px dashed rgba(22,129,138,.28)}
     .coming-soon h2{margin:0 0 10px;color:#123f5a;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.8rem,4vw,2.8rem)}
     .coming-soon p{max-width:680px;margin:0 auto 20px;color:#617783;line-height:1.7}
     .kids-note{margin-top:28px;text-align:center;color:#6b7c85;font-size:.95rem}
-    @media(max-width:700px){.kids-grid{grid-template-columns:1fr}.kids-hero{padding:42px 18px}}
+    @media(max-width:700px){.kids-grid{grid-template-columns:1fr}.kids-card.halloween{grid-column:auto}.kids-hero{padding:42px 18px}}
   </style>
 </head>
 <body>
@@ -40,6 +43,7 @@
   </section>
 
   <section class="kids-grid" aria-label="Kids Corner categories">
+    <a class="kids-card halloween" href="halloween-kids.html"><span>🎃</span><h2>Halloween Kids Corner</h2><p>Spooky-cute bags, seasonal gifts and Halloween goodies picked especially for kids. Seasonal section — easy to hide after Halloween and bring back next year.</p></a>
     <a class="kids-card toys" href="#kids-products"><span>🧸</span><h2>Toys & Play</h2><p>Fun finds for pretend play, games, little surprises and everyday playtime.</p></a>
     <a class="kids-card gifts" href="#kids-products"><span>🎁</span><h2>Gifts for Kids</h2><p>Birthday gifts, holiday surprises, rewards and special little treasures.</p></a>
     <a class="kids-card create" href="diy.html"><span>🎨</span><h2>Creative Kids</h2><p>Hands-on paint projects, crafts and creative activities for kids and families.</p></a>
@@ -47,9 +51,9 @@
   </section>
 
   <section class="coming-soon" id="kids-products">
-    <p class="eyebrow">New Treasures Coming In</p>
-    <h2>Kids Corner is ready for its first toys & gifts!</h2>
-    <p>This section is now set up for individual toy and gift listings. As new Kids Corner items are added, they can appear here with photos, prices and Add to Cart buttons.</p>
+    <p class="eyebrow">More Treasures Coming In</p>
+    <h2>Kids Corner is growing!</h2>
+    <p>This section is ready for individual toy and gift listings. As new Kids Corner items are added, they can appear here with photos, prices and Add to Cart buttons.</p>
     <a class="button purple" href="index.html">Keep Shopping AFT</a>
   </section>
   <p class="kids-note">Ardente Family Treasures • Family fun, creativity and treasures made to be remembered.</p>
