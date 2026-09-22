@@ -187,6 +187,29 @@ const PRODUCTS = [
     stripePriceId: "price_1UDa2v0fa9ricc7XNt195Y5I"
   },
   {
+    id: "halloween-friends-7-piece-set",
+    name: "Halloween Friends DIY Paint Kit — 7 Piece Set",
+    price: 14.99,
+    image: "assets/file_00000000c55481fda5464b932762a240.png",
+    alt: "Halloween Friends seven-piece DIY paint kit before and after with paints and brush",
+    description: "Paint all 7 Halloween friends your way. Includes 6 paints and a brush, with glitter paint markers available as an optional $7.99 upgrade.",
+    detailDescription: "A complete 7-piece Halloween paint-your-own set for $14.99 plus shipping. Includes all 7 ready-to-paint Halloween friends, 6 paints, and 1 brush. Each figure is approximately 4 oz before packaging. Add glitter paint markers for an optional $7.99 upgrade.",
+    category: "halloween-diy",
+    badge: "Halloween DIY",
+    status: "available"
+  },
+  {
+    id: "halloween-glitter-paint-marker-upgrade",
+    name: "Glitter Paint Marker Upgrade",
+    price: 7.99,
+    image: "assets/file_00000000c55481fda5464b932762a240.png",
+    alt: "Optional glitter paint marker upgrade for the Halloween Friends DIY paint kit",
+    description: "Optional glitter paint marker upgrade for extra sparkle on your Halloween DIY set.",
+    category: "diy-goodies",
+    badge: "Optional Upgrade",
+    status: "available"
+  },
+  {
     id: "mummy-pumpkin-diy",
     name: "Mummy Pumpkin DIY Paint Kit",
     price: 9.99,
