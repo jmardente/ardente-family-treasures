@@ -10,91 +10,19 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="store-v2.css">
   <style>
-    .love-page{max-width:1180px;margin:auto;padding:46px 20px 80px}
-    .love-hero{position:relative;overflow:hidden;text-align:center;padding:62px 24px;border-radius:32px;background:linear-gradient(135deg,#fff7f3 0%,#f7edff 48%,#edfafa 100%);border:2px solid rgba(118,81,181,.12);box-shadow:0 14px 34px rgba(55,38,67,.08)}
-    .love-hero:before,.love-hero:after{position:absolute;pointer-events:none;opacity:.13}
-    .love-hero:before{content:"♥";font-size:7rem;left:5%;top:-18px}
-    .love-hero:after{content:"✦";font-size:6rem;right:7%;bottom:-20px}
-    .love-hero h1{margin:.12em 0;color:#563b6f;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.6rem,6vw,5rem);line-height:1}
-    .love-hero p{max-width:760px;margin:17px auto 0;color:#6f6678;font-size:1.12rem;line-height:1.7}
-    .love-signature{margin-top:22px!important;color:#9b637d!important;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:1.15rem!important}
-    .love-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:34px 0 52px}
-    .love-card{min-height:220px;padding:30px;border-radius:26px;background:white;border:2px solid rgba(86,59,111,.1);box-shadow:0 10px 28px rgba(55,38,67,.08);display:flex;flex-direction:column;justify-content:flex-end}
-    .love-card span{font-size:2.4rem}.love-card h2{margin:10px 0 6px;color:#563b6f;font-family:Georgia,"Times New Roman",serif}.love-card p{margin:0;color:#746c7a;line-height:1.55}
-    .love-card.home{background:#fff7e8}.love-card.keepsakes{background:#f8efff}.love-card.occasion{background:#eefafa}.love-card.justbecause{background:#fff0f3}
-    .love-products{padding:48px 24px;border-radius:28px;background:white;border:2px solid rgba(118,81,181,.14);box-shadow:0 12px 32px rgba(55,38,67,.07)}
-    .love-products h2{margin:0 0 10px;color:#563b6f;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.8rem,4vw,2.8rem)}.love-products>.eyebrow,.love-products>h2,.love-products>.collection-intro{text-align:center}.collection-intro{max-width:700px;margin:0 auto 28px!important}.love-product{display:grid;grid-template-columns:minmax(260px,.95fr) minmax(300px,1.05fr);gap:30px;align-items:center;max-width:920px;margin:0 auto 28px;padding:26px;border-radius:24px;background:#fff8f1;border:1px solid #eaded4}.love-product:last-of-type{margin-bottom:0}.love-product img{width:100%;max-height:470px;object-fit:contain;border-radius:18px;background:white}.love-product-info{text-align:left}.love-product-info h3{margin:0 0 8px;color:#563b6f;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.7rem,3vw,2.4rem)}.love-price{margin:12px 0 4px;font-size:1.8rem;font-weight:900;color:#0e7580}.love-shipping,.love-weight{margin:4px 0;color:#746c7a}.love-description{margin:16px 0 22px;color:#746c7a;line-height:1.65}
-    .love-products p{max-width:700px;margin:0 auto 20px;color:#746c7a;line-height:1.7}
-    .love-note{margin-top:28px;text-align:center;color:#7a7280;font-size:.95rem}
-    @media(max-width:700px){.love-grid{grid-template-columns:1fr}.love-hero{padding:44px 18px}.love-product{grid-template-columns:1fr}.love-product-info{text-align:center}}
+    .love-page{max-width:1180px;margin:auto;padding:46px 20px 80px}.love-hero{position:relative;overflow:hidden;text-align:center;padding:62px 24px;border-radius:32px;background:linear-gradient(135deg,#fff7f3 0%,#f7edff 48%,#edfafa 100%);border:2px solid rgba(118,81,181,.12);box-shadow:0 14px 34px rgba(55,38,67,.08)}.love-hero:before,.love-hero:after{position:absolute;pointer-events:none;opacity:.13}.love-hero:before{content:"♥";font-size:7rem;left:5%;top:-18px}.love-hero:after{content:"✦";font-size:6rem;right:7%;bottom:-20px}.love-hero h1{margin:.12em 0;color:#563b6f;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.6rem,6vw,5rem);line-height:1}.love-hero p{max-width:760px;margin:17px auto 0;color:#6f6678;font-size:1.12rem;line-height:1.7}.love-signature{margin-top:22px!important;color:#9b637d!important;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:1.15rem!important}.love-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:34px 0 52px}.love-card{min-height:220px;padding:30px;border-radius:26px;background:white;border:2px solid rgba(86,59,111,.1);box-shadow:0 10px 28px rgba(55,38,67,.08);display:flex;flex-direction:column;justify-content:flex-end}.love-card span{font-size:2.4rem}.love-card h2{margin:10px 0 6px;color:#563b6f;font-family:Georgia,"Times New Roman",serif}.love-card p{margin:0;color:#746c7a;line-height:1.55}.love-card.home{background:#fff7e8}.love-card.keepsakes{background:#f8efff}.love-card.occasion{background:#eefafa}.love-card.justbecause{background:#fff0f3}.love-products{padding:48px 24px;border-radius:28px;background:white;border:2px solid rgba(118,81,181,.14);box-shadow:0 12px 32px rgba(55,38,67,.07)}.love-products h2{margin:0 0 10px;color:#563b6f;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.8rem,4vw,2.8rem)}.love-products>.eyebrow,.love-products>h2,.love-products>.collection-intro{text-align:center}.collection-intro{max-width:700px;margin:0 auto 28px!important}.love-product{display:grid;grid-template-columns:minmax(260px,.95fr) minmax(300px,1.05fr);gap:30px;align-items:center;max-width:920px;margin:0 auto 28px;padding:26px;border-radius:24px;background:#fff8f1;border:1px solid #eaded4}.love-product:last-of-type{margin-bottom:0}.love-product img{width:100%;max-height:470px;object-fit:contain;border-radius:18px;background:white}.love-product-info{text-align:left}.love-product-info h3{margin:0 0 8px;color:#563b6f;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.7rem,3vw,2.4rem)}.love-price{margin:12px 0 4px;font-size:1.8rem;font-weight:900;color:#0e7580}.love-shipping,.love-weight{margin:4px 0;color:#746c7a}.love-description{margin:16px 0 22px;color:#746c7a;line-height:1.65}.love-products p{max-width:700px;margin:0 auto 20px;color:#746c7a;line-height:1.7}.love-note{margin-top:28px;text-align:center;color:#7a7280;font-size:.95rem}@media(max-width:700px){.love-grid{grid-template-columns:1fr}.love-hero{padding:44px 18px}.love-product{grid-template-columns:1fr}.love-product-info{text-align:center}}
   </style>
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="index.html"><span class="brand-title">Ardente Family Treasures</span><span class="brand-subtitle">Books • DIY • Family Treasures</span></a>
-  <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
-  <nav class="site-nav" id="siteNav" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="index.html#shop">Books</a>
-    <a href="diy.html">Paint • Create • Craft</a>
-    <a href="kids-corner.html">Kids Corner</a>
-    <a href="made-with-love.html">Made With Love Gifts</a>
-    <a href="index.html#about">About</a>
-    <a href="index.html#contact">Contact</a>
-    <button class="cart-button" id="openCart" type="button">🛒 Cart <span id="cartCount">0</span></button>
-  </nav>
-</header>
-
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-title">Ardente Family Treasures</span><span class="brand-subtitle">Books • DIY • Family Treasures</span></a><button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="site-nav" id="siteNav" aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#shop">Books</a><a href="diy.html">Paint • Create • Craft</a><a href="kids-corner.html">Kids Corner</a><a href="made-with-love.html">Made With Love Gifts</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a><button class="cart-button" id="openCart" type="button">🛒 Cart <span id="cartCount">0</span></button></nav></header>
 <main class="love-page">
-  <section class="love-hero">
-    <p class="eyebrow">Thoughtful • Heartfelt • Special</p>
-    <h1>Made With Love Gifts</h1>
-    <p>Some gifts are more than things — they carry a little piece of the heart with them. Discover thoughtful treasures, keepsakes and special finds chosen to make someone feel loved.</p>
-    <p class="love-signature">Because the best gifts are the ones that mean something.</p>
-  </section>
-
-  <section class="love-grid" aria-label="Made With Love gift categories">
-    <div class="love-card home"><span>🏡</span><h2>Home & Kitchen</h2><p>Charming pieces that make a house feel warmer, happier and a little more like home.</p></div>
-    <div class="love-card keepsakes"><span>💖</span><h2>Keepsakes & Treasures</h2><p>Meaningful gifts worth holding onto for the memories, milestones and people behind them.</p></div>
-    <div class="love-card occasion"><span>🎁</span><h2>Special Occasion Gifts</h2><p>Thoughtful finds for birthdays, holidays, celebrations, thank-yous and life's special moments.</p></div>
-    <div class="love-card justbecause"><span>🌷</span><h2>Just Because</h2><p>Little gifts that simply say “I thought of you,” “I love you,” or “you matter to me.”</p></div>
-  </section>
-
-  <section class="love-products" id="love-products">
-    <p class="eyebrow">Made With Love Collection</p>
-    <h2>Gifts for the heart and home</h2>
-    <p class="collection-intro">Thoughtful treasures chosen to bring a little warmth, charm and love into everyday life.</p>
-    <article class="love-product">
-      <img src="assets/Salt and pepper .png" alt="Salt and pepper shaker set from Ardente Family Treasures">
-      <div class="love-product-info">
-        <p class="eyebrow">Home & Kitchen</p>
-        <h3>Salt & Pepper Shaker Set</h3>
-        <p class="love-price">$9.99</p>
-        <p class="love-shipping"><strong>Plus shipping</strong></p>
-        <p class="love-weight">Product weight: 14.5 oz before packaging</p>
-        <p class="love-description">A sweet matching salt and pepper set that makes a charming little gift for a kitchen, new home, hostess, family member or friend.</p>
-        <button class="button purple" type="button" data-add-to-cart="made-with-love-salt-pepper-set">Add to Cart</button>
-      </div>
-    </article>
-    <article class="love-product">
-      <img src="assets/file_00000000685081fdb17394b6d87665f6.png" alt="Green and gold leaf decorative dish from Ardente Family Treasures">
-      <div class="love-product-info">
-        <p class="eyebrow">Home & Decor</p>
-        <h3>Leaf Decorative Dish</h3>
-        <p class="love-price">$9.99</p>
-        <p class="love-shipping"><strong>Plus shipping</strong></p>
-        <p class="love-description">A rich green decorative leaf dish with beautiful gold accents — a charming piece for a table, shelf, entryway or thoughtful little gift.</p>
-        <button class="button purple" type="button" data-add-to-cart="made-with-love-leaf-dish">Add to Cart</button>
-      </div>
-    </article>
-  </section>
-
-  <p class="love-note">Ardente Family Treasures • Gifts chosen with care and meant to be remembered.</p>
-</main>
-
+<section class="love-hero"><p class="eyebrow">Thoughtful • Heartfelt • Special</p><h1>Made With Love Gifts</h1><p>Some gifts are more than things — they carry a little piece of the heart with them. Discover thoughtful treasures, keepsakes and special finds chosen to make someone feel loved.</p><p class="love-signature">Because the best gifts are the ones that mean something.</p></section>
+<section class="love-grid" aria-label="Made With Love gift categories"><div class="love-card home"><span>🏡</span><h2>Home & Kitchen</h2><p>Charming pieces that make a house feel warmer, happier and a little more like home.</p></div><div class="love-card keepsakes"><span>💖</span><h2>Keepsakes & Treasures</h2><p>Meaningful gifts worth holding onto for the memories, milestones and people behind them.</p></div><div class="love-card occasion"><span>🎁</span><h2>Special Occasion Gifts</h2><p>Thoughtful finds for birthdays, holidays, celebrations, thank-yous and life's special moments.</p></div><div class="love-card justbecause"><span>🌷</span><h2>Just Because</h2><p>Little gifts that simply say “I thought of you,” “I love you,” or “you matter to me.”</p></div></section>
+<section class="love-products" id="love-products"><p class="eyebrow">Made With Love Collection</p><h2>Gifts for the heart and home</h2><p class="collection-intro">Thoughtful treasures chosen to bring a little warmth, charm and love into everyday life.</p>
+<article class="love-product"><img src="assets/Salt and pepper .png" alt="Salt and pepper shaker set from Ardente Family Treasures"><div class="love-product-info"><p class="eyebrow">Home & Kitchen</p><h3>Salt & Pepper Shaker Set</h3><p class="love-price">$9.99</p><p class="love-shipping"><strong>Plus shipping</strong></p><p class="love-weight">Product weight: 14.5 oz before packaging</p><p class="love-description">A sweet matching salt and pepper set that makes a charming little gift for a kitchen, new home, hostess, family member or friend.</p><button class="button purple" type="button" data-add-to-cart="made-with-love-salt-pepper-set">Add to Cart</button></div></article>
+<article class="love-product"><img src="assets/file_00000000685081fdb17394b6d87665f6.png" alt="Green and gold leaf decorative dish from Ardente Family Treasures"><div class="love-product-info"><p class="eyebrow">Home & Decor</p><h3>Leaf Decorative Dish</h3><p class="love-price">$9.99</p><p class="love-shipping"><strong>Plus shipping</strong></p><p class="love-description">A rich green decorative leaf dish with beautiful gold accents — a charming piece for a table, shelf, entryway or thoughtful little gift.</p><button class="button purple" type="button" data-add-to-cart="made-with-love-leaf-dish">Add to Cart</button></div></article>
+</section><p class="love-note">Ardente Family Treasures • Gifts chosen with care and meant to be remembered.</p></main>
 <aside class="cart-panel" id="cartPanel" aria-hidden="true"><div class="cart-header"><h2>Your Cart</h2><button id="closeCart" type="button" aria-label="Close cart">×</button></div><div id="cartItems" class="cart-items"><p class="empty-cart">Your cart is empty.</p></div><div class="cart-footer"><div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div><button class="button purple full-width" id="checkoutButton" type="button">Checkout with Stripe</button><p class="checkout-message" id="checkoutMessage" role="alert"></p></div></aside><div class="cart-overlay" id="cartOverlay"></div>
-
 <footer class="site-footer"><div class="footer-links"><a href="https://www.amazon.com/dp/B0H9X346WF" target="_blank" rel="noopener">Shop on Amazon</a><a href="http://www.facebook.com/share/1BS6p4Ptz2/" target="_blank" rel="noopener">Follow on Facebook</a></div><p>© 2026 Ardente Family Treasures. All rights reserved.</p></footer>
-<script src="products.js"></script><script src="cart.js"></script><script src="script.js"></script>
-</body>
-</html>
+<script src="products.js"></script><script src="made-with-love-products.js"></script><script src="cart.js"></script><script src="script.js"></script>
+</body></html>
