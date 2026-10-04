@@ -35,9 +35,9 @@ function createProductCard(product) {
 }
 
 function displayProducts(category = "books") {
-  if (!productGrid || !Array.isArray(window.PRODUCTS)) return;
+  if (!productGrid || !Array.isArray(PRODUCTS)) return;
   activeCategory = category;
-  const products = window.PRODUCTS.filter((product) => product.category === "books");
+  const products = PRODUCTS.filter((product) => product.category === "books");
   productGrid.innerHTML = "";
   products.forEach((product) => productGrid.appendChild(createProductCard(product)));
   if (emptyCategory) emptyCategory.hidden = products.length > 0;
