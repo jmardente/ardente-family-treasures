@@ -25,9 +25,9 @@ function createProductCard(product) {
       ${product.badge ? `<span class="badge">${product.badge}</span>` : ""}
       <h3>${product.name}</h3>
       <p>${product.description || ""}</p>
-      ${showPrice ? `<p class="price">${formatPrice(product.price)}</p>` : ""}
+      ${showPrice && !product.options?.length ? `<p class="price">${formatPrice(product.price)}</p>` : ""}
       <div class="product-actions">
-        ${isAvailable ? `<button class="button gold" type="button" data-add-to-cart="${product.id}">Add to Cart</button>` : `<span class="coming">Coming Soon</span>`}
+        ${isAvailable ? (product.options?.length ? product.options.map((option) => `<button class="button gold" type="button" data-add-to-cart="${option.productId}">${option.label} — ${formatPrice(option.price)}</button>`).join("") : `<button class="button gold" type="button" data-add-to-cart="${product.id}">Add to Cart</button>`) : `<span class="coming">Coming Soon</span>`}
       </div>
       ${isAvailable ? `<small class="secure-note">Secure checkout handled by Stripe.</small>` : ""}
     </div>`;
@@ -37,7 +37,7 @@ function createProductCard(product) {
 function displayProducts(category = "books") {
   if (!productGrid || !Array.isArray(PRODUCTS)) return;
   activeCategory = category;
-  const products = PRODUCTS.filter((product) => product.category === "books");
+  const products = PRODUCTS.filter((product) => product.category === "books" && !product.variantOf);
   productGrid.innerHTML = "";
   products.forEach((product) => productGrid.appendChild(createProductCard(product)));
   if (emptyCategory) emptyCategory.hidden = products.length > 0;
