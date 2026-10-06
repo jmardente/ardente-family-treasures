@@ -34,9 +34,19 @@ const PRODUCTS = [
     badge: "Available Now",
     status: "available",
     options: [
-      { label: "Unsigned Copy", price: 10.0 },
-      { label: "Signed Copy", price: 20.0 }
+      { label: "Unsigned Copy", price: 10.0, productId: "cora-magical-necklace" },
+      { label: "Signed Copy", price: 20.0, productId: "cora-magical-necklace-signed" }
     ]
+  },
+  {
+    id: "cora-magical-necklace-signed",
+    name: "Cora and the Magical Necklace — Signed Copy",
+    price: 20.0,
+    image: "assets/Cora and the Magical Necklace Book Cover.png",
+    alt: "Signed Cora and the Magical Necklace children's book by JM Ardente",
+    category: "books",
+    status: "available",
+    variantOf: "cora-magical-necklace"
   },
   {
     id: "glitter-dual-tip-markers-12-pack",
