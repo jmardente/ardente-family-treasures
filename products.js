@@ -323,7 +323,7 @@ const PRODUCTS = [
     category: "halloween-diy",
     status: "available",
     stripePriceId: "price_1UDa5x0fa9ricc7X0ppQHdW5"
-  }
+  },
   {
     id: "made-with-love-salt-pepper-set",
     name: "Salt & Pepper Shaker Set",
