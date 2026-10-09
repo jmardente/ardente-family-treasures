@@ -38,7 +38,9 @@ if (!product) {
   }
 
   if (product.status === "available") {
-    actionEl.innerHTML = `<button class="button gold full-width" type="button" data-add-to-cart="${product.id}">Add Kit to Cart</button>`;
+    actionEl.innerHTML = product.options
+      ? '<p>Choose your kit (plus shipping):</p>' + product.options.map(option => `<button class="button gold full-width" style="margin-bottom:10px" type="button" data-add-to-cart="${option.productId}">Add ${option.label} — ${Number(option.price).toFixed(2)}</button>`).join('')
+      : `<button class="button gold full-width" type="button" data-add-to-cart="${product.id}">Add Kit to Cart</button>`;
   } else {
     actionEl.innerHTML = `<span class="coming">${product.status === "sold-out" ? "Sold Out" : "Coming Soon"}</span>`;
   }

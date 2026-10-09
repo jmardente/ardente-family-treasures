@@ -1,5 +1,82 @@
 const CORA_PRODUCTS = [
   {
+    "image": "assets/cora-ocean-friends-dishes.png",
+    "category": "cora-diy",
+    "badge": "Cora's Ocean DIY",
+    "status": "available",
+    "id": "cora-alligator-dish-diy",
+    "name": "Cora's Ocean Friends — Alligator, Seal & Axolotl DIY",
+    "price": 9.99,
+    "weightOz": 3,
+    "alt": "Cora Ocean Friends alligator, seal dish and axolotl dish DIY kits before and after painting",
+    "description": "Includes one ready-to-paint piece, 6 paints, and a brush.",
+    "detailDescription": "Choose an alligator, seal dish, or axolotl dish for $9.99 each plus shipping, or all three for $27.99 plus shipping. Each individual kit includes 6 paints and a brush. The full set includes 18 paints and 3 brushes. Weights before packaging: alligator 3 oz; seal dish 2 oz; axolotl dish 2 oz.",
+    "options": [
+      {
+        "label": "Alligator",
+        "productId": "cora-alligator-dish-diy",
+        "price": 9.99
+      },
+      {
+        "label": "Seal Dish",
+        "productId": "cora-seal-dish-diy",
+        "price": 9.99
+      },
+      {
+        "label": "Axolotl Dish",
+        "productId": "cora-axolotl-dish-diy",
+        "price": 9.99
+      },
+      {
+        "label": "All 3 — Set",
+        "productId": "cora-ocean-dishes-3-piece-set",
+        "price": 27.99
+      }
+    ]
+  },
+  {
+    "image": "assets/cora-ocean-friends-dishes.png",
+    "category": "cora-diy",
+    "badge": "Cora's Ocean DIY",
+    "status": "available",
+    "id": "cora-seal-dish-diy",
+    "name": "Cora's Ocean Friends — Seal Dish DIY Paint Kit",
+    "price": 9.99,
+    "weightOz": 2,
+    "alt": "Cora Ocean Friends alligator, seal dish and axolotl dish DIY kits before and after painting",
+    "description": "Includes one ready-to-paint piece, 6 paints, and a brush.",
+    "detailDescription": "Choose an alligator, seal dish, or axolotl dish for $9.99 each plus shipping, or all three for $27.99 plus shipping. Each individual kit includes 6 paints and a brush. The full set includes 18 paints and 3 brushes. Weights before packaging: alligator 3 oz; seal dish 2 oz; axolotl dish 2 oz.",
+    "variantOf": "cora-alligator-dish-diy"
+  },
+  {
+    "image": "assets/cora-ocean-friends-dishes.png",
+    "category": "cora-diy",
+    "badge": "Cora's Ocean DIY",
+    "status": "available",
+    "id": "cora-axolotl-dish-diy",
+    "name": "Cora's Ocean Friends — Axolotl Dish DIY Paint Kit",
+    "price": 9.99,
+    "weightOz": 2,
+    "alt": "Cora Ocean Friends alligator, seal dish and axolotl dish DIY kits before and after painting",
+    "description": "Includes one ready-to-paint piece, 6 paints, and a brush.",
+    "detailDescription": "Choose an alligator, seal dish, or axolotl dish for $9.99 each plus shipping, or all three for $27.99 plus shipping. Each individual kit includes 6 paints and a brush. The full set includes 18 paints and 3 brushes. Weights before packaging: alligator 3 oz; seal dish 2 oz; axolotl dish 2 oz.",
+    "variantOf": "cora-alligator-dish-diy"
+  },
+  {
+    "image": "assets/cora-ocean-friends-dishes.png",
+    "category": "cora-diy",
+    "badge": "Cora's Ocean DIY",
+    "status": "available",
+    "id": "cora-ocean-dishes-3-piece-set",
+    "name": "Cora's Ocean Friends — Alligator, Seal & Axolotl 3-Piece Set",
+    "price": 27.99,
+    "weightOz": 7,
+    "alt": "Cora Ocean Friends alligator, seal dish and axolotl dish DIY kits before and after painting",
+    "description": "All three ready-to-paint pieces, with 18 paints and 3 brushes.",
+    "detailDescription": "Alligator, seal dish, and axolotl dish together for $27.99 plus shipping. Includes all 3 pieces, 18 paints, and 3 brushes.",
+    "variantOf": "cora-alligator-dish-diy"
+  },
+  {
     "id": "cora-friends-diy-magnet-set",
     "name": "Cora & Friends DIY Magnet Set",
     "price": 14.99,

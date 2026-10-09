@@ -26,7 +26,7 @@ function saveCart() {
 }
 
 function getProduct(productId) {
-  return PRODUCTS.find((product) => product.id === productId);
+  return (window.PRODUCTS || PRODUCTS).find((product) => product.id === productId);
 }
 
 function formatPrice(price) {
