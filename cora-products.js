@@ -1,5 +1,18 @@
 const CORA_PRODUCTS = [
   {
+    "id": "cora-shell-set-diy",
+    "name": "Cora DIY Shell Set",
+    "price": 19.99,
+    "image": "assets/cora-diy-shell-set.png",
+    "alt": "Cora DIY Shell Set before and after painting, with six paint pots and one brush",
+    "description": "Paint, create, and decorate your own ocean shell set. Includes the shell set pictured, 6 paint pots, and 1 paint brush.",
+    "detailDescription": "Create your own colorful Cora DIY Shell Set for $19.99 plus shipping. Includes the same ready-to-paint shell set pictured, 6 paint pots, and 1 paint brush. Product weight is 12.5 oz before packaging. The painted shells show decorating inspiration.",
+    "category": "cora-diy",
+    "badge": "Cora's Ocean DIY",
+    "status": "available",
+    "weightOz": 12.5
+  },
+  {
     "id": "cora-turtle-container-diy",
     "name": "Cora's Ocean Friends — Turtle Container DIY Paint Kit",
     "price": 9.99,
