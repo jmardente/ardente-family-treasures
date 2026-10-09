@@ -1,5 +1,18 @@
 const CORA_PRODUCTS = [
   {
+    "id": "cora-coral-reef-scene-diy",
+    "name": "Cora Coral Reef Scene DIY Paint Kit",
+    "price": 9.99,
+    "image": "assets/cora-coral-reef-scene-diy.png",
+    "alt": "Coral Reef Scene DIY kit before and after painting with six paints and a brush",
+    "description": "Paint your own colorful coral reef scene with the ocean creatures and coral pieces shown. Includes 6 paints and a brush.",
+    "detailDescription": "Bring the ocean to life with the Coral Reef Scene DIY Paint Kit for $9.99 plus shipping. Includes the same ready-to-paint pieces shown, 6 paints, and 1 paint brush. Product weight is 6 oz before packaging. The painted scene shows decorating inspiration.",
+    "category": "cora-diy",
+    "badge": "Cora's Ocean DIY",
+    "status": "available",
+    "weightOz": 6
+  },
+  {
     "id": "cora-shell-set-diy",
     "name": "Cora DIY Shell Set",
     "price": 19.99,
