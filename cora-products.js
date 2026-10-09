@@ -1,5 +1,17 @@
 const CORA_PRODUCTS = [
   {
+    "id": "cora-turtle-container-diy",
+    "name": "Cora's Ocean Friends — Turtle Container DIY Paint Kit",
+    "price": 9.99,
+    "image": "assets/file_00000000d54c81fda52360ffa1a8107f.png",
+    "alt": "Paint-your-own turtle container DIY kit before and after with six paints and a brush",
+    "description": "Paint your own adorable turtle container. Includes one ready-to-paint turtle container, 6 acrylic paints, and a brush.",
+    "detailDescription": "Create your own colorful turtle container for $9.99 plus shipping. The kit includes 1 ready-to-paint turtle container, 6 acrylic paints, and 1 paint brush. The painted turtle in the photo shows an example of how you can decorate your own.",
+    "category": "cora-diy",
+    "badge": "Cora's Ocean DIY",
+    "status": "available"
+  },
+  {
     id: "cora-puffer-fish-diy",
     name: "Cora's Ocean Friends — Puffer Fish DIY",
     price: 5.99,
