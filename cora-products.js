@@ -1,5 +1,18 @@
 const CORA_PRODUCTS = [
   {
+    "id": "cora-friends-diy-magnet-set",
+    "name": "Cora & Friends DIY Magnet Set",
+    "price": 14.99,
+    "image": "assets/cora-friends-diy-magnet-set.png",
+    "alt": "Cora and Friends DIY Magnet Set before and after painting with six paints and a brush",
+    "description": "Paint your own ocean magnets with Cora & Friends! Includes the magnet set pictured, 6 paints, and a brush.",
+    "detailDescription": "Create your own colorful Cora & Friends DIY Magnet Set for $14.99 plus shipping. Includes the same ready-to-paint magnet pieces pictured, 6 paints, and 1 paint brush. Set weight is 6 oz before packaging. The painted pieces show decorating inspiration.",
+    "category": "cora-diy",
+    "badge": "Cora's Ocean DIY",
+    "status": "available",
+    "weightOz": 6
+  },
+  {
     "id": "cora-coral-reef-scene-diy",
     "name": "Cora Coral Reef Scene DIY Paint Kit",
     "price": 9.99,
