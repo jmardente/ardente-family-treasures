@@ -1,5 +1,18 @@
 const PRODUCTS = [
   {
+    "id": "smiling-bowl-planter-diy",
+    "name": "Cute Smiling Bowl Planter DIY Paint Kit",
+    "price": 9.99,
+    "image": "assets/smiling-bowl-planter-diy.png",
+    "alt": "Cute smiling bowl planter before and after painting with six paints and one brush",
+    "description": "Paint your own cheerful smiling bowl planter. Includes one ready-to-paint planter, 6 paints, and 1 brush.",
+    "detailDescription": "Create your own Cute Smiling Bowl Planter for $9.99 plus shipping. Includes one ready-to-paint planter, 6 paints, and 1 paint brush. Product weight is 6.5 oz without packaging. The painted planter and plant show decorating inspiration; plant is not included.",
+    "category": "everyday-diy",
+    "badge": "Everyday DIY",
+    "status": "available",
+    "weightOz": 6.5
+  },
+  {
     id: "cora-coral-reef",
     name: "Cora and the Coral Reef",
     price: 20.0,
