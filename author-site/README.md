@@ -10,7 +10,7 @@ An elegant author homepage for **Jamie Ardente** (fiction, romance, and creative
 
 ## Files
 - `index.html` — responsive homepage (styles included)
-- `assets/author-portrait.svg` — portrait for the author hero section (pending if not yet uploaded)
+- `assets/author-portrait.svg` — the approved purple-sweater portrait used in the hero section
 - `success.html` — contact form success page
 
 ## Design
